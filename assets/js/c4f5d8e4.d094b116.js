@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocs_website=globalThis.webpackChunkdocs_website||[]).push([[2634],{192(s,e,o){o.r(e),o.d(e,{default:()=>r});o(6540);var t=o(6347),i=o(4848);function r(){return(0,i.jsx)(t.rd,{to:"/p2s-docs/expressions/geometry/point"})}}}]);
