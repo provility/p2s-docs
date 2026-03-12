@@ -23,7 +23,7 @@ Render a mathematical expression animating only the selected portions while all 
 
 ### Single term animation
 
-```
+```js
 writeonly(at(row, col), "full expression", select("term", 1), type(write))
 ```
 
@@ -31,7 +31,7 @@ Animate only the matched term
 
 ### With color highlight
 
-```
+```js
 writeonly(at(row, col), "expression", select("term", 1), type(write), c(blue))
 ```
 
@@ -41,24 +41,24 @@ Animate term in specified color
 
 ### Animate only the substituted term in trig identity
 
-```
+```js
 write_only_1 = writeonly(at(11, 3), "sqrt(a^2-x^2) = sqrt(a^2-a^2 sin^2(theta))", select("a^2 sin^2(theta)", 1), type(write), c(blue))
 ```
 
 ### Reveal only the answer portion
 
-```
+```js
 writeonly(at(5, 2), "x^2 + 2x + 1 = (x+1)^2", select("(x+1)^2", 1), type(write))
 ```
 
 ### Highlight derivative result
 
-```
+```js
 writeonly(at(4, 3), "d/dx[sin(x)] = cos(x)", select("cos(x)", 1), type(write), c(red))
 ```
 
 ### Show factored form emphasis
 
-```
+```js
 writeonly(at(6, 4), "x^2 - 4 = (x-2)(x+2)", select("(x-2)(x+2)", 1), type(write))
 ```

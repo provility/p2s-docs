@@ -21,7 +21,7 @@ Creates a direction-reversed copy of a vector or line, flipping tip and tail whi
 
 ### Reverse at a point expression
 
-```
+```js
 reverse(G, vec, point)
 ```
 
@@ -29,7 +29,7 @@ Reverse vector direction and place at the given point
 
 ### Reverse at coordinates
 
-```
+```js
 reverse(G, vec, x, y)
 ```
 
@@ -37,7 +37,7 @@ Reverse vector direction and place at (x, y)
 
 ### Reverse a line
 
-```
+```js
 reverse(G, line, point)
 ```
 
@@ -47,28 +47,28 @@ Reverse a line direction as a vector at the given point
 
 ### Reverse a vector at the origin
 
-```
+```js
 V = vector(G, 1, 1, 4, 3)
 R = reverse(G, V, point(G, 0, 0))
 ```
 
 ### Reverse a vector at its own tip (tail-to-tail)
 
-```
+```js
 V = vector(G, 0, 0, 3, 2)
 R = reverse(G, V, point(G, 3, 2))
 ```
 
 ### Reverse a vector at explicit coordinates
 
-```
+```js
 V = vector(G, 0, 0, 3, 2)
 R = reverse(G, V, 5, 5)
 ```
 
 ### Reverse a line as a vector
 
-```
+```js
 L = line(G, 0, 0, 4, 3)
 R = reverse(G, L, point(G, 0, 0))
 ```

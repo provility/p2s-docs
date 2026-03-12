@@ -22,7 +22,7 @@ Creates a right circular cylinder with a given radius and height, positioned at 
 
 ### Cylinder at a point
 
-```
+```js
 cylinder(G, radius, height, point)
 ```
 
@@ -30,7 +30,7 @@ Cylinder at an existing point3d with radius and height
 
 ### Cylinder with inline center
 
-```
+```js
 cylinder(G, radius, height, point3d(G, x, y, z))
 ```
 
@@ -38,7 +38,7 @@ Cylinder with inline center point
 
 ### With color
 
-```
+```js
 cylinder(G, radius, height, point, c(green))
 ```
 
@@ -48,7 +48,7 @@ Cylinder with a custom color
 
 ### Cylinder at the origin
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 P = point3d(G, 0, 0, 0)
 cyl = cylinder(G, 1, 5, P)
@@ -56,14 +56,14 @@ cyl = cylinder(G, 1, 5, P)
 
 ### Cylinder with inline center and color
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 cyl = cylinder(G, 2, 4, point3d(G, 1, 1, 0), c("orange"))
 ```
 
 ### Tall narrow cylinder
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 cyl = cylinder(G, 0.5, 8, point3d(G, 0, 0, 0))
 ```

@@ -21,7 +21,7 @@ Positions one vector so its tail starts at another vector's tip, implementing ta
 
 ### Chain two vectors
 
-```
+```js
 chain(G, vecA, vecB)
 ```
 
@@ -31,7 +31,7 @@ Place vecB's tail at vecA's tip
 
 ### Chain a vertical vector to a horizontal one (vector addition)
 
-```
+```js
 A = vector(G, 0, 0, 3, 0)
 B = vector(G, 0, 0, 0, 2)
 C = chain(G, A, B)
@@ -39,7 +39,7 @@ C = chain(G, A, B)
 
 ### Chain multiple vectors in sequence
 
-```
+```js
 V1 = vector(G, 0, 0, 3, 0)
 V2 = vector(G, 0, 0, 1, 2)
 V3 = vector(G, 0, 0, -1, 1)
@@ -49,7 +49,7 @@ C2 = chain(G, C1, V3)
 
 ### Visualize vector addition with resultant
 
-```
+```js
 A = vector(G, 0, 0, 4, 1)
 B = vector(G, 0, 0, 1, 3)
 chained = chain(G, A, B)
@@ -58,7 +58,7 @@ resultant = vector(G, 0, 0, 5, 4, c(red))
 
 ### Chain two force vectors for equilibrium analysis
 
-```
+```js
 F1 = vector(G, 0, 0, 3, 4)
 F2 = vector(G, 0, 0, -2, 1)
 F_sum = chain(G, F1, F2)

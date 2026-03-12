@@ -22,7 +22,7 @@ Constructs a parallel line through a given point, preserving the direction of a 
 
 ### Parallel through point (default length)
 
-```
+```js
 pll(G, L, P)
 ```
 
@@ -30,7 +30,7 @@ Line through P parallel to L, same length as L
 
 ### Parallel with custom length
 
-```
+```js
 pll(G, L, P, 8)
 ```
 
@@ -38,7 +38,7 @@ Parallel through P with length 8
 
 ### Parallel to a vector
 
-```
+```js
 pll(G, V, P)
 ```
 
@@ -48,36 +48,36 @@ Vector through P parallel to vector V
 
 ### Set up graph and reference line
 
-```
+```js
 graph_1 = g2d(at(10, 10), 20, 20)
 ```
 
 ### Define a reference line
 
-```
+```js
 L = line(graph_1, point(graph_1, -4, -2), point(graph_1, 4, 2))
 ```
 
 ### Define a point above the line
 
-```
+```js
 P = point(graph_1, 0, 3)
 ```
 
 ### Draw parallel through P
 
-```
+```js
 pll_1 = pll(graph_1, L, P)
 ```
 
 ### Draw parallel with custom length 6
 
-```
+```js
 pll_2 = pll(graph_1, L, P, 6)
 ```
 
 ### Color the parallel line blue
 
-```
+```js
 pll_3 = pll(graph_1, L, P, c(blue))
 ```

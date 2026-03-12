@@ -24,7 +24,7 @@ Embeds an uploaded image asset on the canvas at logical coordinates or within a 
 
 ### Canvas mode (logical coordinates)
 
-```
+```js
 image(at(row, col), "name")
 ```
 
@@ -32,7 +32,7 @@ Place image at logical canvas position without scale
 
 ### Canvas mode with scale
 
-```
+```js
 image(at(row, col), "name", scale)
 ```
 
@@ -40,7 +40,7 @@ Place image at logical canvas position with custom scale
 
 ### Graph mode with x, y
 
-```
+```js
 image(G, "name", x, y)
 ```
 
@@ -48,7 +48,7 @@ Place image at graph coordinates (x, y)
 
 ### Graph mode with x, y and scale
 
-```
+```js
 image(G, "name", x, y, scale)
 ```
 
@@ -56,7 +56,7 @@ Place image at graph coordinates with custom scale
 
 ### Graph mode with point
 
-```
+```js
 image(G, "name", point)
 ```
 
@@ -64,7 +64,7 @@ Place image at a point expression's position
 
 ### Graph mode with point and scale
 
-```
+```js
 image(G, "name", point, scale)
 ```
 
@@ -74,27 +74,27 @@ Place image at a point expression's position with custom scale
 
 ### Place image on canvas at logical position
 
-```
+```js
 m1 = image(at(5, 5), "myshot", 0.5)
 ```
 
 ### Place image at graph origin
 
-```
+```js
 G = g2d(at(2, 2), 20, 20)
 I = image(G, "photo", 0, 0)
 ```
 
 ### Place image at a point with small scale
 
-```
+```js
 G = g2d(at(2, 20), 20, 20)
 I = image(G, "balloon", point(G, -5, 0), 0.1)
 ```
 
 ### Image with transformation (translate)
 
-```
+```js
 G = g2d(at(2, 20), 20, 20)
 I = image(G, "balloon", point(G, -5, 0), 0.1)
 R = translate(G, I, 4, 4)
@@ -102,7 +102,7 @@ R = translate(G, I, 4, 4)
 
 ### Fill a shape with an image using fi()
 
-```
+```js
 G = g2d(at(2, 3), 30, 30)
 r1 = rect(G, 12, 4, 4, 3, fi("tree", 0.7), fo(1), s(0.1))
 ```

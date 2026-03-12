@@ -21,7 +21,7 @@ Returns a point on a circle at a specified angle in degrees measured countercloc
 
 ### Point at right (0 degrees)
 
-```
+```js
 pointatangle(G, C, 0)
 ```
 
@@ -29,7 +29,7 @@ Rightmost point on the circle
 
 ### Point at top (90 degrees)
 
-```
+```js
 pointatangle(G, C, 90)
 ```
 
@@ -37,7 +37,7 @@ Top point on the circle
 
 ### Point at custom angle
 
-```
+```js
 pointatangle(G, C, 45)
 ```
 
@@ -45,7 +45,7 @@ Point at 45 degrees on the circle
 
 ### Point on ellipse at angle
 
-```
+```js
 pointatangle(G, ellipse(G, 0, 0, 4, 2), 45)
 ```
 
@@ -55,66 +55,66 @@ Point at 45 degrees on an ellipse
 
 ### Set up graph and circle for angle points
 
-```
+```js
 graph_1 = g2d(at(10, 10), 20, 20)
 ```
 
 ### Create a circle centered at origin with radius 3
 
-```
+```js
 C = circle(graph_1, point(graph_1, 0, 0), radius(3))
 ```
 
 ### Point at the right (3, 0)
 
-```
+```js
 right = pointatangle(graph_1, C, 0)
 ```
 
 ### Point at the top (0, 3)
 
-```
+```js
 top = pointatangle(graph_1, C, 90)
 ```
 
 ### Point at 45 degrees
 
-```
+```js
 diag = pointatangle(graph_1, C, 45)
 ```
 
 ### Draw a radius line from center to the 45-degree point
 
-```
+```js
 radius_line = line(graph_1, point(graph_1, 0, 0), diag, type(segment))
 ```
 
 ### Place four cardinal points for an inscribed square
 
-```
+```js
 P0 = pointatangle(graph_1, C, 0)
 ```
 
 ### Top point of inscribed square
 
-```
+```js
 P90 = pointatangle(graph_1, C, 90)
 ```
 
 ### Left point of inscribed square
 
-```
+```js
 P180 = pointatangle(graph_1, C, 180)
 ```
 
 ### Bottom point of inscribed square
 
-```
+```js
 P270 = pointatangle(graph_1, C, 270)
 ```
 
 ### Draw the inscribed square from the four points
 
-```
+```js
 square_1 = polygon(graph_1, P0, P90, P180, P270)
 ```

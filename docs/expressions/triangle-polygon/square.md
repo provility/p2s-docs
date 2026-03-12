@@ -21,7 +21,7 @@ Create a square from a top-left corner point and side length. All four sides are
 
 ### From point variable
 
-```
+```js
 square(G, P, size)
 ```
 
@@ -29,7 +29,7 @@ Square with corner at point variable P
 
 ### From coordinates
 
-```
+```js
 square(G, x, y, size)
 ```
 
@@ -37,7 +37,7 @@ Square with corner at coordinates
 
 ### From inline point
 
-```
+```js
 square(G, point(G, 1, 5), 4)
 ```
 
@@ -45,7 +45,7 @@ Square with inline point definition
 
 ### With styling
 
-```
+```js
 square(G, P, 4, c(red), f(pink))
 ```
 
@@ -55,30 +55,30 @@ Colored square with stroke and fill
 
 ### Unit square at origin
 
-```
+```js
 square_1 = square(graph_1, point(graph_1, 0, 1), 1)
 ```
 
 ### Square for Pythagorean proof
 
-```
+```js
 square_a = square(graph_1, point(graph_1, 0, 5), 3)
 ```
 
 ### Extract edge for labeling
 
-```
+```js
 edge_1 = line(graph_1, item(square_1, type(edge), 1), type(segment))
 ```
 
 ### Get square diagonal
 
-```
+```js
 diag = property(square_1, type(diagonal))
 ```
 
 ### Colored square with fill
 
-```
+```js
 square_2 = square(graph_1, point(graph_1, 3, 4), 2, c(blue), f(lightblue))
 ```

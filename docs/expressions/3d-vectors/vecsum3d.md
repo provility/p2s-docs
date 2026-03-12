@@ -21,7 +21,7 @@ Adds two 3D vectors component-wise, returning the resultant sum vector. Only the
 
 ### Basic addition from origin
 
-```
+```js
 vecsum3d(A, B)
 ```
 
@@ -29,7 +29,7 @@ Sum of A + B, result starts at origin (0,0,0)
 
 ### Addition with point3d start
 
-```
+```js
 vecsum3d(A, B, point3d(G, 1, 1, 1))
 ```
 
@@ -37,7 +37,7 @@ Sum of A + B, result starts at point (1,1,1)
 
 ### Addition with coordinate start
 
-```
+```js
 vecsum3d(A, B, 2, 3, 4)
 ```
 
@@ -47,7 +47,7 @@ Sum of A + B, result starts at (2,3,4)
 
 ### Add two vectors from origin, result at origin
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 A = vector3d(G, 0, 0, 0, 3, 0, 0)
 B = vector3d(G, 0, 0, 0, 0, 2, 0)
@@ -56,7 +56,7 @@ S = vecsum3d(A, B)
 
 ### Add two vectors with result placed at a point
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 A = vector3d(G, 0, 0, 0, 3, 0, 0)
 B = vector3d(G, 0, 0, 0, 0, 2, 0)
@@ -66,7 +66,7 @@ S = vecsum3d(A, B, P)
 
 ### Visualize parallelogram law of addition
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 A = vector3d(G, 0, 0, 0, 2, 1, 0, c(red))
 B = vector3d(G, 0, 0, 0, 0, 1, 2, c(blue))

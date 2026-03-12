@@ -20,7 +20,7 @@ Groups two or more shapes under a shared visual annotation such as a rectangle, 
 
 ### Surround rectangle
 
-```
+```js
 correlate(A, B, type(surround))
 ```
 
@@ -28,7 +28,7 @@ Draw a rectangle around the group of shapes
 
 ### Circle annotation
 
-```
+```js
 correlate(A, B, type(circle))
 ```
 
@@ -36,7 +36,7 @@ Draw an ellipse around the group of shapes
 
 ### Cancel strikethrough
 
-```
+```js
 correlate(A, B, type(mcancel))
 ```
 
@@ -44,7 +44,7 @@ Draw a cancel line through the group of shapes
 
 ### Overbrace
 
-```
+```js
 correlate(A, B, type(overbrace))
 ```
 
@@ -52,7 +52,7 @@ Draw a curly brace above the group of shapes
 
 ### Underbrace
 
-```
+```js
 correlate(A, B, type(underbrace))
 ```
 
@@ -60,7 +60,7 @@ Draw a curly brace below the group of shapes
 
 ### Underline
 
-```
+```js
 correlate(A, B, type(underline))
 ```
 
@@ -68,7 +68,7 @@ Draw a line underneath the group of shapes
 
 ### Multiple shapes
 
-```
+```js
 correlate(A, B, C, type(surround))
 ```
 
@@ -78,18 +78,18 @@ Correlate three or more shapes together
 
 ### Circle matching variables in a trig substitution
 
-```
+```js
 correlate_1 = correlate(select_9, label_5, type(circle))
 ```
 
 ### Surround two related terms
 
-```
+```js
 correlate_1 = correlate(select_1, select_2, type(surround))
 ```
 
 ### Underbrace a group of expressions
 
-```
+```js
 correlate_1 = correlate(write_1, write_2, type(underbrace))
 ```

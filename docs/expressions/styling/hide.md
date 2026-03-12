@@ -19,7 +19,7 @@ Instantly hides one or more shapes on the canvas. Hidden shapes remain in the sc
 
 ### Hide single shape
 
-```
+```js
 hide(A)
 ```
 
@@ -27,7 +27,7 @@ Hide one shape instantly
 
 ### Hide multiple shapes
 
-```
+```js
 hide(A, B, C)
 ```
 
@@ -35,7 +35,7 @@ Hide several shapes at once
 
 ### Hide with duration (effects panel)
 
-```
+```js
 hide(A, B, t(1))
 ```
 
@@ -45,18 +45,18 @@ Hide shapes with a timed transition
 
 ### Hide intersection points and construction lines for parabola ray animation
 
-```
+```js
 hide(L1, L2, L3, L4, L5, H1, H2, H3, H4, H5)
 ```
 
 ### Hide a computed selection result
 
-```
+```js
 hide(select_3)
 ```
 
 ### Hide single shape
 
-```
+```js
 hide(A)
 ```

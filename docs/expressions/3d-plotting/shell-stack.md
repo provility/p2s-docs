@@ -26,7 +26,7 @@ Approximates a solid of revolution using the cylindrical shell method by stackin
 
 ### Shells around y-axis
 
-```
+```js
 shellstack(S, "x", "x^2", "y", 0, 1, 8)
 ```
 
@@ -34,7 +34,7 @@ Cylindrical shells for y = x^2 rotated around y-axis
 
 ### Shells around x-axis
 
-```
+```js
 shellstack(S, "y", "f(y)", "x", 0, 2, 6)
 ```
 
@@ -42,7 +42,7 @@ Cylindrical shells rotated around x-axis
 
 ### Shells with color
 
-```
+```js
 shellstack(S, "x", "x^2", "y", 0, 1, 8, c("cyan"))
 ```
 
@@ -52,7 +52,7 @@ Colored cylindrical shells
 
 ### Shell method for y = x^2 around y-axis
 
-```
+```js
 S = g3d(at(5, 5), 20, 20)
 c1 = plot3d(S, "t^2+1", "t", "0", range(-1, 1), c("magenta"))
 c2 = plot3d(S, "0", "t", "0", range(-1, 1), c("green"))

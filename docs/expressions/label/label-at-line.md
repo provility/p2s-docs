@@ -23,7 +23,7 @@ Place a text annotation at the midpoint of a line segment or polygon edge, with 
 
 ### Label edge with rotation matching slope
 
-```
+```js
 label(G, at(item(tri, type(edge), 2)), "a", buff(-2, -0.7), rotation(26))
 ```
 
@@ -31,7 +31,7 @@ Label angled edge with text rotated to match
 
 ### Label horizontal edge below
 
-```
+```js
 label(G, at(item(tri, type(edge), 1)), "c", buff(0, -0.5))
 ```
 
@@ -39,7 +39,7 @@ Label base edge with text below
 
 ### Label horizontal edge above
 
-```
+```js
 label(G, at(item(tri, type(edge), 1)), "c", buff(0, 0.5))
 ```
 
@@ -47,7 +47,7 @@ Label base edge with text above
 
 ### Label vertical side to the left
 
-```
+```js
 label(G, at(item(tri, type(edge), 3)), "b", buff(-1.5, -1.5))
 ```
 
@@ -55,7 +55,7 @@ Label vertical edge with text offset to the left
 
 ### Force horizontal text on angled edge
 
-```
+```js
 label(G, at(item(tri, type(edge), 3)), "x", buff(-0.2, -1.1), rotation(0))
 ```
 
@@ -63,7 +63,7 @@ Label angled edge but keep text horizontal
 
 ### Label at standalone line
 
-```
+```js
 label(G, at(line_height), "h", buff(0, 0.5))
 ```
 
@@ -71,7 +71,7 @@ Label at a standalone line variable
 
 ### Label line with animated pen
 
-```
+```js
 label(G, at(item(tri, type(edge), 2)), "a", buff(-2, -0.7), rotation(26), type(write))
 ```
 
@@ -81,43 +81,43 @@ Edge label with explicit pen-tracing animation
 
 ### Label hypotenuse 'a' with rotation matching slope
 
-```
+```js
 label_1 = label(graph_1, at(item(triangle_1, type(edge), 2)), "a", buff(-2, -0.7), rotation(26), type(write))
 ```
 
 ### Label base edge 'c' below midpoint
 
-```
+```js
 label_c = label(graph_1, at(item(triangle_1, type(edge), 1)), "c", buff(0, -0.5))
 ```
 
 ### Label third side 'b' offset left
 
-```
+```js
 label_b = label(graph_1, at(item(triangle_1, type(edge), 3)), "b", buff(-1.5, -1.5))
 ```
 
 ### Label edge with question mark placeholder
 
-```
+```js
 label_3 = label(graph_1, at(item(triangle_1, type(edge), 1)), "?", buff(0, 0.5), rotation(0))
 ```
 
 ### Label vertical side 'x' with horizontal text
 
-```
+```js
 label_5 = label(graph_1, at(item(triangle_1, type(edge), 3)), "x", buff(-0.2, -1.1), rotation(0))
 ```
 
 ### Label a height line
 
-```
+```js
 label_h = label(graph_1, at(line_height), "h", buff(0, 0.5))
 ```
 
 ### Label edge then update via textreplace from selection
 
-```
+```js
 label_3 = label(graph_1, at(item(triangle_1, type(edge), 1)), "?", buff(0, 0.5), rotation(0))
 select_1 = select(write_2, "a^2-x^2", 1)
 text_replace_6 = textreplace(label_3, select_1, buff(0, -2), type(replace))

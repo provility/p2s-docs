@@ -23,7 +23,7 @@ Creates a directed arrow from polar coordinates, specified by magnitude and angl
 
 ### From origin
 
-```
+```js
 polarvector(G, length, angle)
 ```
 
@@ -31,7 +31,7 @@ Vector from origin with given length and angle
 
 ### From a point
 
-```
+```js
 polarvector(G, length, angle, point)
 ```
 
@@ -39,7 +39,7 @@ Vector starting at given point
 
 ### From coordinates
 
-```
+```js
 polarvector(G, length, angle, x, y)
 ```
 
@@ -49,36 +49,36 @@ Vector starting at (x, y)
 
 ### Create graph
 
-```
+```js
 G = g2d(at(8, 0), 20, 20)
 ```
 
 ### Vector of length 5 at 30 degrees from origin
 
-```
+```js
 pv1 = polarvector(G, 5, 30)
 ```
 
 ### Vector of length 3 at 90 degrees (straight up)
 
-```
+```js
 pv2 = polarvector(G, 3, 90)
 ```
 
 ### Polar vector starting from a point
 
-```
+```js
 pv3 = polarvector(G, 4, 60, point(G, 2, 1))
 ```
 
 ### Polar vector starting from coordinates
 
-```
+```js
 pv4 = polarvector(G, 4, 45, -1, -1)
 ```
 
 ### Styled polar vector in blue
 
-```
+```js
 pv5 = polarvector(G, 5, 120, c(blue))
 ```

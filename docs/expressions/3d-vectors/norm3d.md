@@ -19,7 +19,7 @@ Normalizes a 3D vector to unit length (magnitude 1) while preserving its directi
 
 ### From a vector3d
 
-```
+```js
 norm3d(V)
 ```
 
@@ -27,7 +27,7 @@ Unit vector in the direction of V, starting at V's start point
 
 ### From a line3d
 
-```
+```js
 norm3d(L)
 ```
 
@@ -35,7 +35,7 @@ Unit direction vector of the line
 
 ### From two points
 
-```
+```js
 norm3d(P1, P2)
 ```
 
@@ -43,7 +43,7 @@ Unit vector from point P1 toward point P2
 
 ### From three numbers
 
-```
+```js
 norm3d(3, 4, 0)
 ```
 
@@ -53,7 +53,7 @@ Unit vector from origin in direction (3,4,0)
 
 ### Normalize a 3D vector to unit length
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 V = vector3d(G, 0, 0, 0, 3, 4, 0)
 U = norm3d(V)
@@ -61,7 +61,7 @@ U = norm3d(V)
 
 ### Get unit direction of a line segment
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 L = line3d(G, 1, 1, 1, 4, 5, 1)
 U = norm3d(L)
@@ -69,14 +69,14 @@ U = norm3d(L)
 
 ### Unit vector from numeric components
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 U = norm3d(3, 4, 0)
 ```
 
 ### Unit vector between two points
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 P1 = point3d(G, 0, 0, 0)
 P2 = point3d(G, 6, 0, 8)

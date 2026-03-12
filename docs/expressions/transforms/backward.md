@@ -21,7 +21,7 @@ Shifts a vector or line backward by a specified distance opposite to its directi
 
 ### Backward shift vector
 
-```
+```js
 backward(G, vec, distance)
 ```
 
@@ -29,7 +29,7 @@ Shift vector backward by distance opposite to its direction
 
 ### Backward shift line
 
-```
+```js
 backward(G, line, distance)
 ```
 
@@ -39,14 +39,14 @@ Shift line backward by distance (returns vector)
 
 ### Shift a vector backward by 2 units
 
-```
+```js
 V = vector(G, 3, 2, 6, 4)
 B = backward(G, V, 2)
 ```
 
 ### Create forward and backward copies of a vector
 
-```
+```js
 V = vector(G, 0, 0, 3, 0)
 F = forward(G, V, 2)
 B = backward(G, V, 2)
@@ -54,14 +54,14 @@ B = backward(G, V, 2)
 
 ### Shift a line backward as a vector
 
-```
+```js
 L = line(G, 2, 0, 5, 0)
 B = backward(G, L, 3)
 ```
 
 ### Backward with default distance
 
-```
+```js
 V = vector(G, 1, 1, 4, 3)
 bwd1 = backward(G, V, 1)
 ```

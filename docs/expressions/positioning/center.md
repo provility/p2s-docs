@@ -22,7 +22,7 @@ Compute the geometric center or midpoint of a shape, or the midpoint between two
 
 ### Midpoint of line
 
-```
+```js
 center(L)
 ```
 
@@ -30,7 +30,7 @@ Returns midpoint of line segment L
 
 ### Center of circle
 
-```
+```js
 center(C)
 ```
 
@@ -38,7 +38,7 @@ Returns center of circle C
 
 ### Center of ellipse
 
-```
+```js
 center(E)
 ```
 
@@ -46,7 +46,7 @@ Returns center of ellipse E
 
 ### Incenter of triangle
 
-```
+```js
 center(T)
 ```
 
@@ -54,7 +54,7 @@ Returns incenter of triangle T (3-vertex polygon)
 
 ### Centroid of polygon
 
-```
+```js
 center(P)
 ```
 
@@ -62,7 +62,7 @@ Returns centroid of polygon P (4+ vertices)
 
 ### Midpoint between two points
 
-```
+```js
 center(G, p1, p2)
 ```
 
@@ -72,21 +72,21 @@ Returns midpoint between points p1 and p2
 
 ### Midpoint of a line segment
 
-```
+```js
 L = line(G, 0, 0, 6, 6)
 M = center(L)
 ```
 
 ### Center of a circle
 
-```
+```js
 C = circle(G, 3, 2, 4)
 cp = center(C)
 ```
 
 ### Midpoint between two points
 
-```
+```js
 A = point(G, 1, 1)
 B = point(G, 5, 3)
 M = center(G, A, B)
@@ -94,7 +94,7 @@ M = center(G, A, B)
 
 ### Incenter of a triangle
 
-```
+```js
 T = polygon(G, 0, 0, 4, 0, 2, 3)
 I = center(T)
 ```

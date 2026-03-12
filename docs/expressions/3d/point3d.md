@@ -22,7 +22,7 @@ Places a point in 3D space at explicit (x, y, z) coordinates, or at a parametric
 
 ### Explicit coordinates
 
-```
+```js
 point3d(G, x, y, z)
 ```
 
@@ -30,7 +30,7 @@ Point at explicit (x, y, z) coordinates
 
 ### Point on line at ratio
 
-```
+```js
 point3d(G, line, t)
 ```
 
@@ -38,7 +38,7 @@ Point on a line3d at parametric ratio t (0 = start, 1 = end)
 
 ### Point on vector at ratio
 
-```
+```js
 point3d(G, vector, t)
 ```
 
@@ -46,7 +46,7 @@ Point on a vector3d at parametric ratio t (0 = start, 1 = end)
 
 ### Point on explicit surface
 
-```
+```js
 point3d(G, surface, x, y)
 ```
 
@@ -54,7 +54,7 @@ Point on a plot3d surface at (x, y) with z computed from the surface equation
 
 ### Point on parametric curve
 
-```
+```js
 point3d(G, curve, t, type(ratio))
 ```
 
@@ -62,7 +62,7 @@ Point on a parametric curve at parameter t as a ratio of the range
 
 ### Point on parametric surface
 
-```
+```js
 point3d(G, surface, u, v)
 ```
 
@@ -70,7 +70,7 @@ Point on a parametric surface at parameter values (u, v)
 
 ### With color
 
-```
+```js
 point3d(G, x, y, z, c(red))
 ```
 
@@ -80,14 +80,14 @@ Point with a custom color
 
 ### Point at coordinates on a 3D graph
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 pt = point3d(G, 1, 2, 3)
 ```
 
 ### Point on a surface with computed z
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 S = plot3d(G, "x^2 + y^2", range(-3, 3), range(-3, 3))
 pt = point3d(G, S, 1, 1)
@@ -95,7 +95,7 @@ pt = point3d(G, S, 1, 1)
 
 ### Point on a surface using variable coordinates (from tangent-plane lesson)
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 f = def(x, y, "x^2 + y^2")
 P = plot3d(G, f, range(-3, 3), range(-3, 3))
@@ -106,7 +106,7 @@ pt = point3d(G, x0, y0, fun(f, x0, y0))
 
 ### Point on a line at the midpoint
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 L = line3d(G, point3d(G, 0, 0, 0), point3d(G, 4, 4, 4))
 mid = point3d(G, L, 0.5)

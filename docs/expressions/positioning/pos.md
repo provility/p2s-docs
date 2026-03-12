@@ -21,7 +21,7 @@ Apply a relative row and column shift to one or more containers, moving them fro
 
 ### Shift single container
 
-```
+```js
 pos(G, dRow, dCol)
 ```
 
@@ -29,7 +29,7 @@ Move one container by dRow, dCol
 
 ### Shift two containers together
 
-```
+```js
 pos(G, T, dRow, dCol)
 ```
 
@@ -37,7 +37,7 @@ Move two containers by the same offset
 
 ### Shift three containers together
 
-```
+```js
 pos(G, T, M, dRow, dCol)
 ```
 
@@ -47,13 +47,13 @@ Move three containers by the same offset
 
 ### Shift a graph down by 2 rows and right by 3 cols
 
-```
+```js
 pos(G, 2, 3)
 ```
 
 ### Move a graph and text block together
 
-```
+```js
 G = g2d(at(2, 3), 14, 14)
 T = write(at(18, 3), "f(x) = x^2", type(write))
 pos(G, T, 5, 0)
@@ -61,12 +61,12 @@ pos(G, T, 5, 0)
 
 ### Shift graph left without vertical change
 
-```
+```js
 pos(G, 0, -5)
 ```
 
 ### Move three containers in unison
 
-```
+```js
 pos(G, T, M, 3, 2)
 ```

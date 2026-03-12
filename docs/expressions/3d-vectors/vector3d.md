@@ -20,7 +20,7 @@ Creates a directed 3D vector arrow between two points in a 3D graph, defined by 
 
 ### From six coordinates
 
-```
+```js
 vector3d(G, x1, y1, z1, x2, y2, z2)
 ```
 
@@ -28,7 +28,7 @@ Vector from (x1,y1,z1) to (x2,y2,z2)
 
 ### From two point3d variables
 
-```
+```js
 vector3d(G, P1, P2)
 ```
 
@@ -36,7 +36,7 @@ Vector from point3d P1 to point3d P2
 
 ### From origin
 
-```
+```js
 vector3d(G, 0, 0, 0, 3, 4, 5)
 ```
 
@@ -44,7 +44,7 @@ Vector starting at origin pointing to (3,4,5)
 
 ### With color styling
 
-```
+```js
 vector3d(G, 0, 0, 0, 1, 0, 0, c(red))
 ```
 
@@ -54,14 +54,14 @@ Red-colored vector along x-axis
 
 ### Create a vector from origin to point (3, 2, 1)
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 V = vector3d(G, 0, 0, 0, 3, 2, 1)
 ```
 
 ### Create a vector between two existing 3D points
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 P1 = point3d(G, 1, 0, 0)
 P2 = point3d(G, 4, 3, 2)
@@ -70,7 +70,7 @@ V = vector3d(G, P1, P2)
 
 ### Create three basis vectors along x, y, z axes with colors
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 i = vector3d(G, 0, 0, 0, 1, 0, 0, c(red))
 j = vector3d(G, 0, 0, 0, 0, 1, 0, c(green))

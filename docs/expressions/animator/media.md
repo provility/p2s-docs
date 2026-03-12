@@ -19,7 +19,7 @@ Attaches an audio or video asset to an expression for synchronized media playbac
 
 ### Inline on write expression
 
-```
+```js
 write(at(row, col), "content", type(write), media("asset-name"))
 ```
 
@@ -27,7 +27,7 @@ Play audio while pen-tracing the expression
 
 ### Media with duration control
 
-```
+```js
 write(at(row, col), "content", type(write), media("asset-name"), t(3))
 ```
 
@@ -37,12 +37,12 @@ Media with custom animation duration
 
 ### Narrated trig substitution introduction
 
-```
+```js
 write_2 = write(at(3.1, 2.2), "int sqrt(a^2-x^2) dx", type(write), media("trig-sub-intro"))
 ```
 
 ### Write expression with media and custom duration
 
-```
+```js
 write_5 = write(at(12, 3), "2 hat(i) - hat(j) + 3 hat(k)", type(write), media("vector-intro"), t(5))
 ```

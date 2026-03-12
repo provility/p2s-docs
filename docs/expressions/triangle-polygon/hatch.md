@@ -22,7 +22,7 @@ Fills a polygon interior with a repeating line pattern in diagonal, vertical, or
 
 ### Default diagonal hatch
 
-```
+```js
 hatch(G, polygon)
 ```
 
@@ -30,7 +30,7 @@ Diagonal hatching with default spacing
 
 ### Custom spacing
 
-```
+```js
 hatch(G, polygon, 0.3)
 ```
 
@@ -38,7 +38,7 @@ Closer hatch lines
 
 ### Diagonal direction
 
-```
+```js
 hatch(G, polygon, 0.5, "/")
 ```
 
@@ -46,7 +46,7 @@ Explicit diagonal direction
 
 ### Vertical stripes
 
-```
+```js
 hatch(G, polygon, 0.5, "|")
 ```
 
@@ -54,7 +54,7 @@ Vertical hatch lines
 
 ### Horizontal stripes
 
-```
+```js
 hatch(G, polygon, 0.5, "-")
 ```
 
@@ -62,7 +62,7 @@ Horizontal hatch lines
 
 ### Colored hatch
 
-```
+```js
 hatch(G, polygon, 0.3, "/", c(blue))
 ```
 
@@ -72,36 +72,36 @@ Blue hatch lines
 
 ### Hatch a triangle for area visualization
 
-```
+```js
 hatch_1 = hatch(graph_1, triangle_1)
 ```
 
 ### Dense diagonal hatching
 
-```
+```js
 hatch_2 = hatch(graph_1, triangle_1, 0.3, "/")
 ```
 
 ### Vertical stripes on rectangle
 
-```
+```js
 hatch_3 = hatch(graph_1, rect_1, 0.5, "|", c(blue))
 ```
 
 ### Horizontal stripes on square
 
-```
+```js
 hatch_4 = hatch(graph_1, square_1, 0.4, "-")
 ```
 
 ### Hatch right triangle for area proof
 
-```
+```js
 hatch_rt = hatch(graph_1, sss_triangle, 0.3, "/", c(red))
 ```
 
 ### Hatch polygon region
 
-```
+```js
 hatch_poly = hatch(graph_1, polygon_1, 0.5, "/")
 ```

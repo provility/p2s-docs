@@ -24,7 +24,7 @@ Creates a 2D polar coordinate graph with concentric radial gridlines, configurab
 
 ### Polar graph with max radius
 
-```
+```js
 p2d(at(row, col), height, width, radius(rMax))
 ```
 
@@ -32,7 +32,7 @@ Polar graph with auto grid spacing
 
 ### Polar graph with step
 
-```
+```js
 p2d(at(row, col), height, width, radius(rMax, rStep))
 ```
 
@@ -40,7 +40,7 @@ Polar graph with custom concentric circle spacing
 
 ### Polar graph with grid
 
-```
+```js
 p2d(at(row, col), height, width, radius(rMax), grid())
 ```
 
@@ -48,7 +48,7 @@ Polar graph showing concentric circles and radial lines
 
 ### Polar graph with grid and shadow
 
-```
+```js
 p2d(at(row, col), height, width, radius(rMax), grid(), br(0.5))
 ```
 
@@ -58,19 +58,19 @@ Full-featured polar graph
 
 ### Polar graph with grid for plotting
 
-```
+```js
 G = p2d(at(2, 4), 20, 20, range(0, 10, 1), grid())
 ```
 
 ### Plot a polar rose curve
 
-```
+```js
 G = p2d(at(2, 4), 20, 20, range(0, 10, 1), grid())
 plot(G, "2 + cos(3*theta)")
 ```
 
 ### Point in polar coordinates on polar graph
 
-```
+```js
 point(G, 5, 30, type(polar))
 ```

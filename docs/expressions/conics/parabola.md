@@ -23,7 +23,7 @@ Draws a parabola on a 2D graph from a vertex and focal parameter, or from an equ
 
 ### Vertex point + focal parameter
 
-```
+```js
 parabola(G, vertex_point, p)
 ```
 
@@ -31,7 +31,7 @@ Parabola at vertex with focal distance p
 
 ### Vertex coordinates + focal parameter
 
-```
+```js
 parabola(G, h, k, p)
 ```
 
@@ -39,7 +39,7 @@ Parabola at (h, k) with focal distance p
 
 ### With rotation
 
-```
+```js
 parabola(G, vertex_point, p, rotation)
 ```
 
@@ -47,7 +47,7 @@ Rotated parabola, angle in radians
 
 ### From equation string
 
-```
+```js
 parabola(G, "y = x^2 - 4x + 3")
 ```
 
@@ -55,7 +55,7 @@ Parabola defined by equation
 
 ### Standard form equation
 
-```
+```js
 parabola(G, "x^2 = 4y")
 ```
 
@@ -65,48 +65,48 @@ Parabola in standard x^2 = 4py form
 
 ### Parabola from equation x^2 = 4y
 
-```
+```js
 parabola_1 = parabola(graph_2, "x^2=4y")
 ```
 
 ### Parabola from quadratic equation
 
-```
+```js
 parabola_1 = parabola(G, "y = x^2 - 4x + 3")
 ```
 
 ### Parabola at vertex with focal distance
 
-```
+```js
 parabola_1 = parabola(G, point(G, 0, 0), 1)
 ```
 
 ### Extract and draw focus
 
-```
+```js
 F = point(G, property(parabola_1, type(foci, 1)), c(red))
 ```
 
 ### Extract and draw directrix line
 
-```
+```js
 D = line(G, property(parabola_1, type(directrix, 1)))
 ```
 
 ### Sample point on parabola at ratio
 
-```
+```js
 P = point(graph_2, parabola_1, 0.5, type(ratio))
 ```
 
 ### Animate focus-directrix equidistance trace
 
-```
+```js
 trace_1 = trace(G, parabola_1, type(focus), buff(-1, -1))
 ```
 
 ### Animate parallel ray reflection through focus
 
-```
+```js
 trace_1 = trace(G, parabola_1, type(rays), buff(-1, -1))
 ```

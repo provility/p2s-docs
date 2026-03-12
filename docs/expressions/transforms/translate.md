@@ -22,7 +22,7 @@ Translates a geometric shape by a displacement vector (dx, dy), moving every poi
 
 ### Translate with numeric values
 
-```
+```js
 translate(G, shape, dx, dy)
 ```
 
@@ -32,14 +32,14 @@ Shift shape by (dx, dy)
 
 ### Translate a point 3 units right and 2 units up
 
-```
+```js
 P = point(G, 1, 1)
 T = translate(G, P, 3, 2)
 ```
 
 ### Translate an image with animation (from image-rotation lesson)
 
-```
+```js
 G = g2d(at(2, 20), 20, 20)
 I = image(G, "balloon", point(G, -5, 0), 0.1)
 R = translate(G, I, 4, a)
@@ -48,21 +48,21 @@ animator(at(10,10), a, 2)
 
 ### Translate a polygon to create a copy
 
-```
+```js
 T = sas(G, 5, 60, 5, point(G, 0, 0))
 T2 = translate(G, T, 6, 0)
 ```
 
 ### Translate a circle diagonally
 
-```
+```js
 C = circle(G, 3, point(G, 0, 0))
 C2 = translate(G, C, 4, 4)
 ```
 
 ### Translate a line segment vertically
 
-```
+```js
 L = line(G, 0, 0, 3, 2)
 L2 = translate(G, L, 0, 4)
 ```

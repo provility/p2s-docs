@@ -21,7 +21,7 @@ Creates a draggable titled card on the canvas for displaying structured content 
 
 ### Basic card
 
-```
+```js
 card(at(row, col), "title", "content")
 ```
 
@@ -31,18 +31,18 @@ Creates a card with a title and body content at the specified position
 
 ### Display a definition card
 
-```
+```js
 card_1 = card(at(2, 3), "Definition", "A rectangle is a quadrilateral with four right angles")
 ```
 
 ### Display a theorem card
 
-```
+```js
 card_2 = card(at(5, 3), "Theorem", "The sum of interior angles of a triangle is 180 degrees")
 ```
 
 ### Display an instruction card
 
-```
+```js
 card_3 = card(at(1, 1), "Instructions", "Drag the point to explore the relationship between slope and tangent line")
 ```

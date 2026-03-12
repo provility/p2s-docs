@@ -20,7 +20,7 @@ Animate revealing a previously hidden text selection at its current position usi
 
 ### Basic reveal
 
-```
+```js
 textreveal(selectVar)
 ```
 
@@ -28,7 +28,7 @@ Reveal selection at its original position
 
 ### With position offset
 
-```
+```js
 textreveal(selectVar, buff(0, 1))
 ```
 
@@ -38,14 +38,14 @@ Reveal with offset
 
 ### Reveal hidden selection from writewithout with notes
 
-```
+```js
 writewithout_1 = writewithout(at(21.4, 14.2), "(a+x^2 + 1) / (x^2 + 1)", select("x^2 + 1", 2), type(write), f(48))
 text_reveal_1 = textreveal(writewithout_1_select_1, buff(-0.4, -0.2), notes("hello world"))
 ```
 
 ### Reveal hidden answer in equation
 
-```
+```js
 M = write(at(3, 2), "x = 5", type(print))
 answer = select(M, "5", 1)
 hide(answer)
@@ -54,7 +54,7 @@ textreveal(answer)
 
 ### Reveal derivative result
 
-```
+```js
 M = write(at(4, 3), "f'(x) = 2x", type(write))
 result = select(M, "2x", 1)
 hide(result)
@@ -63,7 +63,7 @@ textreveal(result)
 
 ### Reveal with offset
 
-```
+```js
 M = write(at(5, 2), "a^2 + b^2 = c^2", type(print))
 rhs = select(M, "c^2", 1)
 textreveal(rhs, buff(0, 0.5))

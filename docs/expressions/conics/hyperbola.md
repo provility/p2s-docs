@@ -24,7 +24,7 @@ Draws a two-branch hyperbola on a 2D graph from center coordinates and transvers
 
 ### Center point + semi-axes
 
-```
+```js
 hyperbola(G, center_point, a, b)
 ```
 
@@ -32,7 +32,7 @@ Hyperbola at a point with transverse axis a and conjugate axis b
 
 ### Center coordinates + semi-axes
 
-```
+```js
 hyperbola(G, h, k, a, b)
 ```
 
@@ -40,7 +40,7 @@ Hyperbola at (h, k) with semi-axes a and b
 
 ### With rotation
 
-```
+```js
 hyperbola(G, center_point, a, b, rotation)
 ```
 
@@ -48,7 +48,7 @@ Rotated hyperbola, angle in radians
 
 ### From equation string
 
-```
+```js
 hyperbola(G, "x^2/16 - y^2/9 = 1")
 ```
 
@@ -56,7 +56,7 @@ Hyperbola defined by standard-form equation
 
 ### Shifted equation
 
-```
+```js
 hyperbola(G, "(x-1)^2/4 - (y+2)^2/9 = 1")
 ```
 
@@ -66,48 +66,48 @@ Hyperbola centered at (1, -2) from equation
 
 ### Hyperbola at origin with semi-axes 3 and 2
 
-```
+```js
 H = hyperbola(G, point(G, 0, 0), 3, 2)
 ```
 
 ### Hyperbola from equation
 
-```
+```js
 H = hyperbola(G, "x^2/16 - y^2/9 = 1")
 ```
 
 ### Extract and draw first focus
 
-```
+```js
 F1 = point(G, property(H, type(foci, 1)), c(red))
 ```
 
 ### Extract and draw second focus
 
-```
+```js
 F2 = point(G, property(H, type(foci, 2)), c(red))
 ```
 
 ### Draw first vertex
 
-```
+```js
 V1 = point(G, property(H, type(vertex, 1)), c(green))
 ```
 
 ### Draw first directrix line
 
-```
+```js
 D1 = line(G, property(H, type(directrix, 1)))
 ```
 
 ### Animate focal difference trace
 
-```
+```js
 trace_1 = trace(G, H, type(1), buff(-1, -1))
 ```
 
 ### Sample point on hyperbola at ratio
 
-```
+```js
 P = point(G, H, 0.25, type(ratio))
 ```

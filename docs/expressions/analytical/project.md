@@ -21,7 +21,7 @@ Computes the orthogonal projection of a point onto a line or vector, returning t
 
 ### Project point onto line
 
-```
+```js
 project(G, L, P)
 ```
 
@@ -29,7 +29,7 @@ Foot of perpendicular from P to line L
 
 ### Project point onto vector
 
-```
+```js
 project(G, V, P)
 ```
 
@@ -37,7 +37,7 @@ Foot of perpendicular from P onto vector V
 
 ### Project with styling
 
-```
+```js
 project(G, L, P, c(red))
 ```
 
@@ -47,48 +47,48 @@ Projected point colored red
 
 ### Set up graph for projection demonstration
 
-```
+```js
 graph_1 = g2d(at(10, 10), 20, 20)
 ```
 
 ### Create a line to project onto
 
-```
+```js
 L = line(graph_1, point(graph_1, -4, -1), point(graph_1, 4, 1))
 ```
 
 ### Create a point above the line
 
-```
+```js
 P = point(graph_1, 1, 4)
 ```
 
 ### Project P onto L (foot of perpendicular)
 
-```
+```js
 D = project(graph_1, L, P)
 ```
 
 ### Draw the perpendicular segment from P to D
 
-```
+```js
 perp_seg = line(graph_1, P, D, type(segment), pd(4, 4))
 ```
 
 ### Mark the right angle at D
 
-```
+```js
 rightangle_1 = rightangle(graph_1, D, P, point(graph_1, 4, 1), 0.4)
 ```
 
 ### Project a triangle vertex onto opposite edge (altitude foot)
 
-```
+```js
 triangle_1 = sas(graph_1, 5, 60, 4, point(graph_1, -2, -2))
 ```
 
 ### Extract the edge and project vertex onto it
 
-```
+```js
 foot = project(graph_1, line(graph_1, item(triangle_1, type(edge), 1)), item(triangle_1, type(vertex), 3))
 ```

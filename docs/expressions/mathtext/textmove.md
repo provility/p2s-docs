@@ -21,7 +21,7 @@ Animate moving a text object from its current position to a new destination with
 
 ### Move to absolute position
 
-```
+```js
 textmove(at(row, col), source)
 ```
 
@@ -29,7 +29,7 @@ Move source to specified coordinates
 
 ### Move to selection position
 
-```
+```js
 textmove(selection, source)
 ```
 
@@ -37,7 +37,7 @@ Move source to selection's position
 
 ### With offset
 
-```
+```js
 textmove(destination, source, buff(r, c))
 ```
 
@@ -47,14 +47,14 @@ Move with additional offset
 
 ### Move equation to new position
 
-```
+```js
 M = write(at(2, 2), "x^2 + y^2", type(print))
 textmove(at(4, 5), M)
 ```
 
 ### Move label to selection position
 
-```
+```js
 L = label(graph_1, at(angle_2), "theta", buff(-0.9, -2))
 S = select(write_1, "theta", 1)
 textmove(S, L)
@@ -62,7 +62,7 @@ textmove(S, L)
 
 ### Move with offset
 
-```
+```js
 M = write(at(3, 3), "result", type(print))
 textmove(at(5, 5), M, buff(0.5, 0))
 ```

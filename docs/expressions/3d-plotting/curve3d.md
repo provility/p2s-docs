@@ -24,7 +24,7 @@ Draws a 3D parametric curve from component functions x(t), y(t), z(t) over a par
 
 ### Parametric curve with one range (curve3d)
 
-```
+```js
 plot3d(G, "cos(t)", "sin(t)", "t", range(0, 2*pi))
 ```
 
@@ -32,7 +32,7 @@ plot3d(G, "cos(t)", "sin(t)", "t", range(0, 2*pi))
 
 ### Straight-line curve for revolution boundary
 
-```
+```js
 plot3d(G, "t", "0.5*t", "0", range(0, 4), c("green"))
 ```
 
@@ -40,7 +40,7 @@ plot3d(G, "t", "0.5*t", "0", range(0, 4), c("green"))
 
 ### Parametric surface with two ranges (para3d)
 
-```
+```js
 plot3d(G, "cos(u)*sin(v)", "sin(u)*sin(v)", "cos(v)", range(0, 2*pi), range(0, pi))
 ```
 
@@ -48,7 +48,7 @@ Parametric surface using u and v parameters with two range() args
 
 ### Vertical line curve for closing a region
 
-```
+```js
 plot3d(G, "4", "t", "0", range(0, 2), c("green"))
 ```
 
@@ -58,7 +58,7 @@ Vertical line at x=4 used to close a region boundary
 
 ### Boundary curves for solid of revolution around x-axis
 
-```
+```js
 G = g3d(at(5, 5), 20, 20)
 c1 = plot3d(G, "t", "0.5*t", "0", range(0, 4), c("green"))
 c2 = plot3d(G, "4", "t", "0", range(0, 2), c("green"))
@@ -66,7 +66,7 @@ c2 = plot3d(G, "4", "t", "0", range(0, 2), c("green"))
 
 ### Parabolic curve for revolution around y-axis
 
-```
+```js
 G = g3d(at(5, 5), 20, 20)
 c1 = plot3d(G, "t^2+1", "t", "0", range(-1, 1), c("magenta"))
 c2 = plot3d(G, "0", "t", "0", range(-1, 1), c("green"))
@@ -74,7 +74,7 @@ c2 = plot3d(G, "0", "t", "0", range(-1, 1), c("green"))
 
 ### Curves for washer method between sqrt(x) and x^2
 
-```
+```js
 S = g3d(at(5, 5), 20, 20)
 c1 = plot3d(S, "t", "sqrt(t)", "0", range(0, 1), c("magenta"))
 c2 = plot3d(S, "t", "t^2", "0", range(0, 1), c("green"))
@@ -82,7 +82,7 @@ c2 = plot3d(S, "t", "t^2", "0", range(0, 1), c("green"))
 
 ### Parametric sphere surface with two parameter ranges
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 S = plot3d(G, "cos(u)*sin(v)", "sin(u)*sin(v)", "cos(v)", range(0, 2*pi), range(0, pi))
 ```

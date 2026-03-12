@@ -22,7 +22,7 @@ Bundles x-axis and y-axis ranges with grid visibility options into a single axis
 
 ### Axes only (default, no grid lines)
 
-```
+```js
 axes(range(-10, 10), range(-5, 5))
 ```
 
@@ -30,7 +30,7 @@ Shows axes but no grid lines
 
 ### Axes with grid lines
 
-```
+```js
 axes(range(-10, 10), range(-5, 5), "gridlines")
 ```
 
@@ -38,7 +38,7 @@ Shows both axes and grid lines
 
 ### No axes or grid (blank background)
 
-```
+```js
 axes(range(-10, 10), range(-5, 5), "nogrid")
 ```
 
@@ -46,7 +46,7 @@ Hides everything - no axes, no grid
 
 ### Styled grid lines
 
-```
+```js
 axes(range(-10, 10), range(-5, 5), grid(c(gray)), "gridlines")
 ```
 
@@ -54,7 +54,7 @@ Grid lines with custom color
 
 ### Used inside g2d
 
-```
+```js
 g2d(at(row, col), height, width, axes(range(-5, 5), range(-5, 5)))
 ```
 
@@ -64,24 +64,24 @@ Axes as a single argument to g2d
 
 ### Graph with axes bundled together
 
-```
+```js
 G = g2d(at(2, 2), 20, 20, axes(range(-10, 10), range(-5, 5)))
 ```
 
 ### Graph with axes and visible grid lines
 
-```
+```js
 G = g2d(at(2, 2), 20, 20, axes(range(-10, 10), range(-5, 5), "gridlines"))
 ```
 
 ### Graph with no axes or grid (bare canvas)
 
-```
+```js
 G = g2d(at(2, 2), 20, 20, axes(range(-5, 5), range(-5, 5), "nogrid"))
 ```
 
 ### Graph with styled gray grid lines
 
-```
+```js
 G = g2d(at(2, 2), 20, 20, axes(range(-5, 5), range(-5, 5), grid(c(gray)), "gridlines"))
 ```

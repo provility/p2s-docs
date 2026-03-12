@@ -23,7 +23,7 @@ Computes and displays the tangent plane to a 3D surface at a given point using p
 
 ### Tangent plane on plot3d reference with x, y
 
-```
+```js
 tangentplane(G, surface, x, y)
 ```
 
@@ -31,7 +31,7 @@ Tangent plane at coordinates (x, y) on a plot3d surface
 
 ### Tangent plane on plot3d reference with size
 
-```
+```js
 tangentplane(G, surface, x, y, size)
 ```
 
@@ -39,7 +39,7 @@ Tangent plane with custom visual size
 
 ### Tangent plane at point3d
 
-```
+```js
 tangentplane(G, surface, pt)
 ```
 
@@ -47,7 +47,7 @@ Tangent plane at a point3d location (uses x, y from point)
 
 ### Tangent plane at point3d with size
 
-```
+```js
 tangentplane(G, surface, pt, size)
 ```
 
@@ -55,7 +55,7 @@ Tangent plane at point3d with custom visual size
 
 ### Tangent plane from string equation
 
-```
+```js
 tangentplane(G, "x^2 + y^2", x, y)
 ```
 
@@ -65,7 +65,7 @@ Tangent plane using inline string equation instead of plot3d reference
 
 ### Tangent plane on paraboloid with animated point
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 S = plot3d(G, "x^2 + y^2", range(-3, 3), range(-3, 3))
 tx = 1
@@ -77,7 +77,7 @@ change(tx, 1, -2)
 
 ### Tangent plane using function definition and coordinates
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 f = def(x, y, "x^2 + y^2")
 P = plot3d(G, f, range(-3, 3), range(-3, 3))

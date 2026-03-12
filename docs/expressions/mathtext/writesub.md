@@ -25,7 +25,7 @@ Render a mathematical expression with automatic find-and-replace substitution ap
 
 ### Basic substitution
 
-```
+```js
 writesub(at(row, col), "content", "find", "replace")
 ```
 
@@ -33,7 +33,7 @@ Instant rendering with substitution
 
 ### Animated substitution
 
-```
+```js
 writesub(at(row, col), "content", "find", "replace", type(write))
 ```
 
@@ -41,7 +41,7 @@ Pen-tracing animation with substitution
 
 ### Instant with print
 
-```
+```js
 writesub(at(row, col), "content", "find", "replace", type(print))
 ```
 
@@ -49,7 +49,7 @@ Instant KaTeX rendering (default behavior)
 
 ### With styling
 
-```
+```js
 writesub(at(row, col), "content", "find", "replace", type(write), c(blue))
 ```
 
@@ -59,30 +59,30 @@ Animated with color styling
 
 ### Substitute variable x with y in quadratic
 
-```
+```js
 sub_1 = writesub(at(3, 2), "x^2 + 2x + 1", "x", "y", type(write))
 ```
 
 ### Replace x with (a+b) in expression
 
-```
+```js
 sub_2 = writesub(at(5, 2), "x^2 - 1", "x", "(a+b)", type(print))
 ```
 
 ### Substitute theta with pi/6 in trig expression
 
-```
+```js
 sub_3 = writesub(at(7, 3), "sin(theta) + cos(theta)", "theta", "pi/6", type(write))
 ```
 
 ### Replace fraction in calculus expression
 
-```
+```js
 sub_4 = writesub(at(9, 2), "int 1/x dx = ln|x|", "1/x", "u", type(write), c(blue))
 ```
 
 ### Variable substitution with color
 
-```
+```js
 sub_5 = writesub(at(11, 4), "a^2 + b^2 = c^2", "a", "3", type(print), c(red))
 ```

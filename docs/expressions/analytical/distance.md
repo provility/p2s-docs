@@ -21,7 +21,7 @@ Computes the Euclidean distance between two points, the length of a segment, or 
 
 ### Length of a line/vector
 
-```
+```js
 distance(L)
 ```
 
@@ -29,7 +29,7 @@ Returns the length of line or vector L
 
 ### Distance between two points
 
-```
+```js
 distance(A, B)
 ```
 
@@ -37,7 +37,7 @@ Euclidean distance between points A and B
 
 ### Vector magnitude
 
-```
+```js
 distance(3, 4)
 ```
 
@@ -47,42 +47,42 @@ Magnitude of vector (3,4) = 5
 
 ### Set up graph and create a line
 
-```
+```js
 graph_1 = g2d(at(10, 10), 20, 20)
 ```
 
 ### Create a line with known length (3-4-5 triangle)
 
-```
+```js
 L = line(graph_1, 0, 0, 3, 4)
 ```
 
 ### Get length of the line (returns 5)
 
-```
+```js
 d1 = distance(L)
 ```
 
 ### Create two points
 
-```
+```js
 A = point(graph_1, 1, 1)
 ```
 
 ### Second point
 
-```
+```js
 B = point(graph_1, 4, 5)
 ```
 
 ### Distance between two points
 
-```
+```js
 d2 = distance(A, B)
 ```
 
 ### Vector magnitude (returns 5)
 
-```
+```js
 d3 = distance(3, 4)
 ```

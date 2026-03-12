@@ -23,7 +23,7 @@ Fill a polygon region with parallel line shading in diagonal, vertical, or horiz
 
 ### Default diagonal hatch
 
-```
+```js
 hatch(G, polygon)
 ```
 
@@ -31,7 +31,7 @@ Diagonal hatching with default spacing
 
 ### Custom spacing
 
-```
+```js
 hatch(G, polygon, 0.3)
 ```
 
@@ -39,7 +39,7 @@ Denser hatch lines
 
 ### Explicit direction
 
-```
+```js
 hatch(G, polygon, 0.5, "/")
 ```
 
@@ -47,7 +47,7 @@ Diagonal direction with spacing
 
 ### Vertical stripes
 
-```
+```js
 hatch(G, polygon, 0.5, "|")
 ```
 
@@ -55,7 +55,7 @@ Vertical hatch lines
 
 ### Horizontal stripes
 
-```
+```js
 hatch(G, polygon, 0.5, "-")
 ```
 
@@ -63,7 +63,7 @@ Horizontal hatch lines
 
 ### Colored hatch
 
-```
+```js
 hatch(G, polygon, 0.3, "/", c(blue))
 ```
 
@@ -73,7 +73,7 @@ Blue diagonal hatch lines
 
 ### Hatch feasible region in linear programming (from linear-programming lesson)
 
-```
+```js
 G = g2d(at(2, 2), 20, 30, range(-1, 10))
 L1 = line(G, point(G, 0, 0), point(G, 5, 0))
 L2 = line(G, point(G, 0, 0), point(G, 0, 4))
@@ -86,30 +86,30 @@ hatch(G, P, 0.3, "/", c(blue))
 
 ### Default diagonal hatching on triangle
 
-```
+```js
 hatch_1 = hatch(graph_1, triangle_1)
 ```
 
 ### Dense diagonal hatching
 
-```
+```js
 hatch_2 = hatch(graph_1, triangle_1, 0.3, "/")
 ```
 
 ### Vertical blue stripes on rectangle
 
-```
+```js
 hatch_3 = hatch(graph_1, rect_1, 0.5, "|", c(blue))
 ```
 
 ### Horizontal stripes on square
 
-```
+```js
 hatch_4 = hatch(graph_1, square_1, 0.4, "-")
 ```
 
 ### Red hatching for area proof
 
-```
+```js
 hatch_rt = hatch(graph_1, sss_triangle, 0.3, "/", c(red))
 ```

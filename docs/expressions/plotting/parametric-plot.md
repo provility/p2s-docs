@@ -23,7 +23,7 @@ Renders a parametric curve defined by x(t) and y(t) component expressions over a
 
 ### Basic parametric curve
 
-```
+```js
 plot(G, "x(t)", "y(t)", range(tMin, tMax))
 ```
 
@@ -31,7 +31,7 @@ Plot a parametric curve over the given t interval
 
 ### With color
 
-```
+```js
 plot(G, "x(t)", "y(t)", range(tMin, tMax), c(green))
 ```
 
@@ -39,7 +39,7 @@ Parametric curve with custom stroke color
 
 ### From def() definitions
 
-```
+```js
 xf = def(t, "cos(t)")
 yf = def(t, "sin(t)")
 plot(G, xf, yf, range(0, 2*pi))
@@ -51,14 +51,14 @@ Parametric curve using function definitions
 
 ### Unit circle as parametric curve
 
-```
+```js
 G = g2d(at(2, 2), 20, 20)
 plot(G, "cos(t)", "sin(t)", range(0, 2*pi))
 ```
 
 ### Ellipse with parameters a and b
 
-```
+```js
 G = g2d(at(2, 2), 20, 20)
 a = 3
 b = 2
@@ -67,14 +67,14 @@ plot(G, "a*cos(t)", "b*sin(t)", range(0, 2*pi), c(green))
 
 ### Cycloid curve
 
-```
+```js
 G = g2d(at(2, 2), 20, 20)
 plot(G, "t - sin(t)", "1 - cos(t)", range(0, 4*pi))
 ```
 
 ### Spiral curve
 
-```
+```js
 G = g2d(at(2, 2), 20, 20)
 plot(G, "t*cos(t)", "t*sin(t)", range(0, 6*pi))
 ```

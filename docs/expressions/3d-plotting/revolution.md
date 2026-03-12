@@ -23,7 +23,7 @@ Generates a solid of revolution by rotating a bounded planar region around the x
 
 ### Full revolution around x-axis
 
-```
+```js
 revolution(G, R, "x")
 ```
 
@@ -31,7 +31,7 @@ revolution(G, R, "x")
 
 ### Full revolution around y-axis
 
-```
+```js
 revolution(G, R, "y")
 ```
 
@@ -39,7 +39,7 @@ revolution(G, R, "y")
 
 ### Partial revolution with angle
 
-```
+```js
 revolution(G, R, "x", 180)
 ```
 
@@ -47,7 +47,7 @@ Half revolution (180 degrees) around x-axis
 
 ### Revolution with color
 
-```
+```js
 revolution(G, R, "x", c("magenta"))
 ```
 
@@ -57,7 +57,7 @@ Full revolution with custom color
 
 ### Solid of revolution around x-axis from linear boundary
 
-```
+```js
 G = g3d(at(5, 5), 20, 20)
 c1 = plot3d(G, "t", "0.5*t", "0", range(0, 4), c("green"))
 c2 = plot3d(G, "4", "t", "0", range(0, 2), c("green"))
@@ -67,7 +67,7 @@ rl = revolution(G, R, "x", c("magenta"))
 
 ### Solid of revolution around y-axis from parabolic curve
 
-```
+```js
 G = g3d(at(5, 5), 20, 20)
 c1 = plot3d(G, "t^2+1", "t", "0", range(-1, 1), c("magenta"))
 c2 = plot3d(G, "0", "t", "0", range(-1, 1), c("green"))

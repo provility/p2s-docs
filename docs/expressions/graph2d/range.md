@@ -22,7 +22,7 @@ Defines the visible axis range with minimum and maximum bounds, optional tick st
 
 ### Basic range (min and max)
 
-```
+```js
 range(min, max)
 ```
 
@@ -30,7 +30,7 @@ Set axis bounds with automatic tick step
 
 ### Range with step
 
-```
+```js
 range(min, max, step)
 ```
 
@@ -38,7 +38,7 @@ Set axis bounds with explicit tick spacing
 
 ### Trig range with pi labels
 
-```
+```js
 range(-2*pi, 2*pi, pi/4, "trig")
 ```
 
@@ -46,7 +46,7 @@ Pi-based axis labels for trigonometric function plots
 
 ### Range for plot domain restriction
 
-```
+```js
 plot(G, "f(x)", range(a, b))
 ```
 
@@ -56,42 +56,42 @@ When used inside plot(), restricts the plotted domain
 
 ### Standard symmetric range
 
-```
+```js
 G = g2d(at(2, 2), 20, 20, range(-5, 5), range(-5, 5))
 ```
 
 ### Range with custom step on both axes
 
-```
+```js
 G = g2d(at(2, 3), 30, 30, range(-2, 2, 0.5), range(-2, 2, 1))
 ```
 
 ### Asymmetric range for positive-heavy data
 
-```
+```js
 G = g2d(at(1, 14), 12, 18, range(-1, 5, 1), range(-1, 15, 2))
 ```
 
 ### Single x-range only (y defaults)
 
-```
+```js
 G = g2d(at(2, 2), 20, 30, range(-1, 10))
 ```
 
 ### Trig range for sine/cosine plotting
 
-```
+```js
 G = g2d(at(2, 2), 20, 30, range(-2*pi, 2*pi, pi/4, "trig"), range(-2, 2))
 ```
 
 ### Inverse trig range on y-axis
 
-```
+```js
 G = g2d(at(2, 2), 20, 30, range(-1, 1), range(-pi, pi, pi/4, "trig"))
 ```
 
 ### Range used in polar plot domain
 
-```
+```js
 plot(G, "theta", range(0, 4*pi))
 ```

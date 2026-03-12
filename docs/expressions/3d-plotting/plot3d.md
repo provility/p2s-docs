@@ -23,7 +23,7 @@ Renders a 3D surface as a wireframe mesh from an explicit equation z = f(x, y) o
 
 ### Explicit surface with auto domain
 
-```
+```js
 plot3d(G, "x^2 + y^2")
 ```
 
@@ -31,7 +31,7 @@ Surface using g3d default axis ranges
 
 ### Explicit surface with custom domain
 
-```
+```js
 plot3d(G, "x^2 + y^2", range(-3, 3), range(-3, 3))
 ```
 
@@ -39,7 +39,7 @@ Surface with explicit x and y domain
 
 ### Surface from function definition
 
-```
+```js
 plot3d(G, f, range(-3, 3), range(-3, 3))
 ```
 
@@ -47,7 +47,7 @@ Surface using a def() function reference for reuse
 
 ### Implicit surface
 
-```
+```js
 plot3d(G, "x^2 + y^2 + z^2 - 1")
 ```
 
@@ -55,7 +55,7 @@ Implicit surface f(x,y,z) = 0 when expression uses x, y, and z
 
 ### Surface with color
 
-```
+```js
 plot3d(G, "sin(x)*cos(y)", range(-3, 3), range(-3, 3), c("blue"))
 ```
 
@@ -65,14 +65,14 @@ Colored surface
 
 ### Paraboloid surface with custom range
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 S = plot3d(G, "x^2 + y^2", range(-3, 3), range(-3, 3))
 ```
 
 ### Surface from function definition with point and tangent plane
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 f = def(x, y, "x^2 + y^2")
 P = plot3d(G, f, range(-3, 3), range(-3, 3))
@@ -84,7 +84,7 @@ T = tangentplane(G, P, x0, y0)
 
 ### Implicit sphere surface
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 S = plot3d(G, "x^2 + y^2 + z^2 - 1")
 ```

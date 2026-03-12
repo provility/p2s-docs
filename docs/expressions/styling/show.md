@@ -20,7 +20,7 @@ Instantly reveals one or more previously hidden shapes on the canvas. Supports a
 
 ### Show single shape
 
-```
+```js
 show(A)
 ```
 
@@ -28,7 +28,7 @@ Show one hidden shape instantly
 
 ### Show multiple shapes
 
-```
+```js
 show(A, B, C)
 ```
 
@@ -36,7 +36,7 @@ Show several hidden shapes at once
 
 ### Show only (focus mode)
 
-```
+```js
 show(A, B, type(only))
 ```
 
@@ -44,7 +44,7 @@ Show only these shapes, hide everything else
 
 ### Show with duration (effects panel)
 
-```
+```js
 show(A, B, type(only), t(1))
 ```
 
@@ -54,18 +54,18 @@ Show-only with a timed transition
 
 ### Show a single hidden shape
 
-```
+```js
 show(A)
 ```
 
 ### Show multiple shapes at once
 
-```
+```js
 show(L1, L2, L3)
 ```
 
 ### Focus on specific shapes, hiding everything else
 
-```
+```js
 show(triangle_1, label_1, type(only))
 ```

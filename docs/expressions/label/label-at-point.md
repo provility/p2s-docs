@@ -22,7 +22,7 @@ Place a text annotation near a point on a 2D graph, with a directional offset to
 
 ### Upper-right of point
 
-```
+```js
 label(G, at(P), "P", buff(0.5, 0.5))
 ```
 
@@ -30,7 +30,7 @@ Text appears above and to the right of point
 
 ### Upper-left of point
 
-```
+```js
 label(G, at(P), "P", buff(-1, 1))
 ```
 
@@ -38,7 +38,7 @@ Text appears above and to the left of point
 
 ### Lower-left of point
 
-```
+```js
 label(G, at(P), "Q", buff(-1, -1))
 ```
 
@@ -46,7 +46,7 @@ Text appears below and to the left of point
 
 ### Lower-right of point
 
-```
+```js
 label(G, at(P), "P", buff(0.5, -0.5))
 ```
 
@@ -54,7 +54,7 @@ Text appears below and to the right of point
 
 ### Direct above point
 
-```
+```js
 label(G, at(P), "P", buff(0, 1))
 ```
 
@@ -62,7 +62,7 @@ Text appears directly above point
 
 ### Direct below point
 
-```
+```js
 label(G, at(P), "P", buff(0, -1))
 ```
 
@@ -70,7 +70,7 @@ Text appears directly below point
 
 ### Label without offset (legacy)
 
-```
+```js
 label(G, P, "A")
 ```
 
@@ -78,7 +78,7 @@ Label at point with no offset, text may overlap dot
 
 ### Label at inline point
 
-```
+```js
 label(G, point(G, 2, fun(eq, 2)), eq_s, buff(-2))
 ```
 
@@ -88,48 +88,48 @@ Label at an inline point on a function curve
 
 ### Label point with upper-right offset
 
-```
+```js
 point_1 = point(graph_1, -3.1, 1.8)
 label_1 = label(graph_1, at(point_1), "A", buff(0.5, 0.5))
 ```
 
 ### Label point P above-left
 
-```
+```js
 p = point(G, 0.8, fun(eq, 0.8))
 label(G, p, "P", buff(-1, 1))
 ```
 
 ### Label point Q below-left
 
-```
+```js
 q = point(G, 2, fun(eq, 2))
 label(G, q, "Q", buff(-1, -1))
 ```
 
 ### Label point with no offset
 
-```
+```js
 P = point(G, S, 0)
 label(G, P, "A")
 ```
 
 ### Label point with no buff, just name
 
-```
+```js
 label(G, p1, "P")
 ```
 
 ### Label point Q with offset (two graphs)
 
-```
+```js
 q1 = point(G, q1x, fun(eq, q1x))
 label(G, q1, "Q", buff(-2, -1))
 ```
 
 ### Label at function evaluation point with string variable
 
-```
+```js
 eq_s = "1/x^2"
 eq = def(x, eq_s)
 label(K, point(K, 2, fun(eq, 2)), eq_s, buff(-2))
@@ -137,7 +137,7 @@ label(K, point(K, 2, fun(eq, 2)), eq_s, buff(-2))
 
 ### Label extracted vertex point from polygon
 
-```
+```js
 point_A = point(graph_1, item(triangle_1, type(vertex), 1))
 label_A = label(graph_1, at(point_A), "A", buff(0.5, 0.5))
 ```

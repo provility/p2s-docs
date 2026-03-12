@@ -22,7 +22,7 @@ Returns a point on a circle or curve at a given x-coordinate. An optional index 
 
 ### Point on circle (upper)
 
-```
+```js
 pointat(G, C, 3)
 ```
 
@@ -30,7 +30,7 @@ Upper point on circle C at x=3
 
 ### Point on circle (lower)
 
-```
+```js
 pointat(G, C, 3, 2)
 ```
 
@@ -38,7 +38,7 @@ Lower point on circle C at x=3
 
 ### Point on plot
 
-```
+```js
 pointat(G, P, 2)
 ```
 
@@ -48,48 +48,48 @@ Point on plot P at x=2
 
 ### Set up graph and a circle
 
-```
+```js
 graph_1 = g2d(at(10, 10), 20, 20)
 ```
 
 ### Create a circle centered at origin with radius 5
 
-```
+```js
 C = circle(graph_1, point(graph_1, 0, 0), radius(5))
 ```
 
 ### Get the top point at x=3 yielding (3, 4)
 
-```
+```js
 top = pointat(graph_1, C, 3)
 ```
 
 ### Get the bottom point at x=3 yielding (3, -4)
 
-```
+```js
 bottom = pointat(graph_1, C, 3, 2)
 ```
 
 ### Draw a vertical chord connecting both points
 
-```
+```js
 chord = line(graph_1, top, bottom, type(segment))
 ```
 
 ### Get point on a parabola plot at x=3 yielding (3, 9)
 
-```
+```js
 P = plot(graph_1, "x^2", -5, 5)
 ```
 
 ### Point on the parabola at x=3
 
-```
+```js
 pt_on_plot = pointat(graph_1, P, 3)
 ```
 
 ### Draw a secant line between two points on the plot
 
-```
+```js
 secant = line(graph_1, pointat(graph_1, P, 2), pointat(graph_1, P, 3), type(segment))
 ```

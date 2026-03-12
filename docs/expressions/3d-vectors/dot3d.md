@@ -20,7 +20,7 @@ Computes the dot product (scalar product) of two vectors, returning a single num
 
 ### Dot product of two 3D vectors
 
-```
+```js
 dot(A, B)
 ```
 
@@ -28,7 +28,7 @@ Returns scalar a*b = ax*bx + ay*by + az*bz
 
 ### Assigned to variable for reuse
 
-```
+```js
 d = dot(A, B)
 ```
 
@@ -38,7 +38,7 @@ Store the scalar result for use in further expressions
 
 ### Dot product of two 3D vectors
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 A = vector3d(G, 0, 0, 0, 1, 2, 3)
 B = vector3d(G, 0, 0, 0, 4, 5, 6)
@@ -47,7 +47,7 @@ d = dot(A, B)
 
 ### Check orthogonality - dot product is zero for perpendicular vectors
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 A = vector3d(G, 0, 0, 0, 1, 0, 0)
 B = vector3d(G, 0, 0, 0, 0, 1, 0)
@@ -56,7 +56,7 @@ d = dot(A, B)
 
 ### Dot product of parallel vectors equals product of magnitudes
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 A = vector3d(G, 0, 0, 0, 2, 0, 0)
 B = vector3d(G, 0, 0, 0, 5, 0, 0)

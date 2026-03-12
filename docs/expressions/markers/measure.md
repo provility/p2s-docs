@@ -23,7 +23,7 @@ Display a distance measurement annotation between two points or along a line seg
 
 ### Measure a line
 
-```
+```js
 measure(G, line_var)
 ```
 
@@ -31,7 +31,7 @@ Measurement indicator on existing line variable
 
 ### Measure between points
 
-```
+```js
 measure(G, P1, P2)
 ```
 
@@ -39,7 +39,7 @@ Measurement between two point variables
 
 ### Measure with offset
 
-```
+```js
 measure(G, line_var, buff(0, -1))
 ```
 
@@ -47,7 +47,7 @@ Measurement offset perpendicular to line
 
 ### Measure with label
 
-```
+```js
 measure(G, line_var, "5 cm", buff(0, -0.5))
 ```
 
@@ -55,7 +55,7 @@ Measurement with custom text label and offset
 
 ### Colored measurement
 
-```
+```js
 measure(G, line_var, buff(0, -1), c(black))
 ```
 
@@ -63,7 +63,7 @@ Measurement with specific color
 
 ### Measure between points with label and offset
 
-```
+```js
 measure(G, P1, P2, "", buff(1.7, 1))
 ```
 
@@ -73,7 +73,7 @@ Two-point measurement with empty label and offset
 
 ### Measure between two points with offset (from label-markers lesson)
 
-```
+```js
 point_3 = point(graph_1, 2.0, -1.7)
 point_4 = point(graph_1, -3.3, -2.1)
 measure_1 = measure(graph_1, point_3, point_4, "", buff(1.7, 1))
@@ -81,26 +81,26 @@ measure_1 = measure(graph_1, point_3, point_4, "", buff(1.7, 1))
 
 ### Measure a triangle side with offset and color
 
-```
+```js
 measure_a = measure(graph_1, line_a, buff(0, -1), c(black))
 ```
 
 ### Measure with custom label text
 
-```
+```js
 measure_b = measure(graph_1, line_b, "5 units", buff(0, -0.5))
 ```
 
 ### Measure extracted edge from polygon
 
-```
+```js
 edge_line = line(graph_1, item(triangle_1, type(edge), 1), type(segment))
 edge_measure = measure(graph_1, edge_line, buff(0, -0.5))
 ```
 
 ### Hide measurements initially for reveal animation
 
-```
+```js
 measure_a = measure(graph_1, line_a, buff(0, -1))
 measure_b = measure(graph_1, line_b, buff(0, -0.5))
 hide(measure_a, measure_b)

@@ -20,7 +20,7 @@ Create bulleted or styled lists for mathematical content with customizable bulle
 
 ### Default bullets
 
-```
+```js
 write(at(row, col), mlist("item1", "item2", "item3"))
 ```
 
@@ -28,7 +28,7 @@ List with default bullet points
 
 ### Custom bullet types
 
-```
+```js
 write(at(row, col), mlist("given type(bullet)", "find type(arrow)", "solution type(check)"))
 ```
 
@@ -36,7 +36,7 @@ Different bullet for each item
 
 ### With line gap
 
-```
+```js
 write(at(row, col), mlist("item1", "item2", 12))
 ```
 
@@ -46,24 +46,24 @@ Custom spacing between items
 
 ### List given information for problem
 
-```
+```js
 write_1 = write(at(3, 2), mlist("Given: sin(theta) = 1/2 type(bullet)", "Find: theta in [0, 2pi] type(arrow)", "Solution: theta = pi/6, 5pi/6 type(check)"))
 ```
 
 ### Present theorem requirements
 
-```
+```js
 write_2 = write(at(4, 3), mlist("f is continuous on [a,b]", "f is differentiable on (a,b)", "f(a) = f(b)", 12))
 ```
 
 ### List differentiation rules
 
-```
+```js
 write_3 = write(at(5, 2), mlist("Power rule: d/dx[x^n] = nx^(n-1) type(arrow)", "Product rule: d/dx[uv] = u'v + uv' type(arrow)", "Chain rule: d/dx[f(g)] = f'(g)g' type(arrow)"))
 ```
 
 ### Show solution steps with checkmarks
 
-```
+```js
 write_4 = write(at(G, buff(3, 0)), mlist("Factor: x^2-4 = (x+2)(x-2) type(check)", "Set each factor = 0 type(check)", "Solutions: x = -2, 2 type(star)"))
 ```

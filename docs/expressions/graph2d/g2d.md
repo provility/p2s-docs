@@ -26,7 +26,7 @@ Creates a 2D Cartesian graph container with configurable position, size, axis ra
 
 ### Minimal graph (position + size only)
 
-```
+```js
 g2d(at(row, col), height, width)
 ```
 
@@ -34,7 +34,7 @@ Creates graph with default -10 to 10 range on both axes
 
 ### Graph with both ranges
 
-```
+```js
 g2d(at(row, col), height, width, range(xMin, xMax), range(yMin, yMax))
 ```
 
@@ -42,7 +42,7 @@ Explicit x and y axis ranges
 
 ### Graph with ranges and step sizes
 
-```
+```js
 g2d(at(row, col), height, width, range(xMin, xMax, xStep), range(yMin, yMax, yStep))
 ```
 
@@ -50,7 +50,7 @@ Ranges with custom tick/gridline step sizes for precise control
 
 ### Uniform scale graph
 
-```
+```js
 g2d(at(row, col), height, width, range(min, max, step), type(uniform))
 ```
 
@@ -58,7 +58,7 @@ Equal scale on both axes - one range controls both. Step optional.
 
 ### Graph with grid lines
 
-```
+```js
 g2d(at(row, col), height, width, range(xMin, xMax), range(yMin, yMax), grid())
 ```
 
@@ -66,7 +66,7 @@ Shows grid lines with axes visible
 
 ### Graph with grid but no axes
 
-```
+```js
 g2d(at(row, col), height, width, range(xMin, xMax, step), range(yMin, yMax, step), grid(noaxes))
 ```
 
@@ -74,7 +74,7 @@ Shows grid lines without axis lines
 
 ### Trig graph (pi-based x axis)
 
-```
+```js
 g2d(at(row, col), height, width, range(-2*pi, 2*pi, pi/4, "trig"), range(-2, 2))
 ```
 
@@ -82,7 +82,7 @@ X-axis uses pi-based labels. Pi step options: pi/6, pi/4, pi/3, pi/2, pi
 
 ### Inverse trig graph (pi-based y axis)
 
-```
+```js
 g2d(at(row, col), height, width, range(-1, 1), range(-pi, pi, pi/4, "trig"))
 ```
 
@@ -90,7 +90,7 @@ Y-axis uses pi-based labels for arcsin, arccos, arctan
 
 ### Complex plane
 
-```
+```js
 g2d(at(row, col), height, width, range(-5, 5), range(-5, 5), type(uniform), grid("Re", "Im"))
 ```
 
@@ -98,7 +98,7 @@ Complex plane with Re/Im axis labels, uniform scale, always has grid
 
 ### Graph with border shadow
 
-```
+```js
 g2d(at(row, col), height, width, range(xMin, xMax), range(yMin, yMax), br(0.5))
 ```
 
@@ -106,7 +106,7 @@ Adds a border shadow effect
 
 ### Graph with grid + shadow
 
-```
+```js
 g2d(at(row, col), height, width, range(xMin, xMax), range(yMin, yMax), grid(), br(0.5))
 ```
 
@@ -116,74 +116,74 @@ Full-featured graph with grid lines and border shadow
 
 ### Simple graph for plotting
 
-```
+```js
 G = g2d(at(2, 3), 30, 30)
 ```
 
 ### Graph with explicit ranges
 
-```
+```js
 G = g2d(at(2, 2), 20, 20, range(-5, 5), range(-5, 5))
 ```
 
 ### Graph with step sizes on both axes
 
-```
+```js
 G = g2d(at(2, 3), 30, 30, range(-2, 2, 0.5), range(-2, 2, 1))
 ```
 
 ### Graph with grid lines and no axes
 
-```
+```js
 graph_1 = g2d(at(5, 26), 13.3, 20.6, range(-1, 5, 1), range(-1, 5, 1), grid(noaxes))
 ```
 
 ### Graph with grid lines visible
 
-```
+```js
 graph_1 = g2d(at(4.2, 37), 16.6, 16.1, range(-1, 2, 0.5), range(-1, 2, 0.5), grid())
 ```
 
 ### Uniform scale graph with step
 
-```
+```js
 graph_1 = g2d(at(5.2, 21.2), 25, 25, range(-1, 4, 1), type(uniform))
 ```
 
 ### Trig graph for sine/cosine
 
-```
+```js
 G = g2d(at(2, 2), 20, 30, range(-2*pi, 2*pi, pi/4, "trig"), range(-2, 2))
 ```
 
 ### Inverse trig graph for arcsin
 
-```
+```js
 G = g2d(at(2, 2), 20, 30, range(-1, 1), range(-pi, pi, pi/4, "trig"))
 ```
 
 ### Complex plane with grid
 
-```
+```js
 G = g2d(at(2, 2), 20, 20, range(-5, 5), range(-5, 5), type(uniform), grid("Re", "Im"))
 ```
 
 ### Multiple small graphs in a grid layout
 
-```
+```js
 G1 = g2d(at(2, 2), 14, 14)
 G2 = g2d(at(2, 18), 14, 14)
 ```
 
 ### Two graphs with different y ranges for function and derivative
 
-```
+```js
 G1 = g2d(at(1, 14), 12, 18, range(-1, 5, 1), range(-1, 15, 2))
 G2 = g2d(at(15, 14), 12, 18, range(-1, 5, 1), range(-2, 12, 2))
 ```
 
 ### Graph with border shadow
 
-```
+```js
 G = g2d(at(2, 2), 20, 20, range(-5, 5), range(-5, 5), br(0.5))
 ```

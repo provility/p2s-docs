@@ -22,7 +22,7 @@ Finds the intersection point of two geometric objects such as lines, circles, or
 
 ### Line-line intersection
 
-```
+```js
 intersect(G, L1, L2)
 ```
 
@@ -30,7 +30,7 @@ Single intersection point of two lines
 
 ### Line-circle first intersection
 
-```
+```js
 intersect(G, L, C)
 ```
 
@@ -38,7 +38,7 @@ First intersection of line and circle
 
 ### Line-circle second intersection
 
-```
+```js
 intersect(G, L, C, 2)
 ```
 
@@ -46,7 +46,7 @@ Second intersection of line and circle
 
 ### Circle-circle intersection
 
-```
+```js
 intersect(G, C1, C2)
 ```
 
@@ -54,7 +54,7 @@ First intersection of two circles
 
 ### Plot-vline intersection
 
-```
+```js
 intersect(G, P, vline(G, x))
 ```
 
@@ -64,54 +64,54 @@ Point where a plot crosses a vertical line at x
 
 ### Find intersection of two lines (linear programming vertex)
 
-```
+```js
 G = g2d(at(2, 2), 20, 30, range(-1, 10))
 ```
 
 ### Define constraint lines
 
-```
+```js
 L1 = line(G, point(G, 0, 0), point(G, 5, 0))
 ```
 
 ### Second constraint line
 
-```
+```js
 L3 = line(G, point(G, 0, 3), point(G, 4, 0))
 ```
 
 ### Find the corner point where constraints meet
 
-```
+```js
 A = intersect(G, L1, L3)
 ```
 
 ### Intersect two circles
 
-```
+```js
 circle_1 = circle(graph_1, point(graph_1, 1.4, 1.6), radius(2))
 ```
 
 ### Second circle partially overlapping
 
-```
+```js
 circle_2 = circle(graph_1, point(graph_1, 3.1, 2.8), radius(2))
 ```
 
 ### Get first intersection of the two circles
 
-```
+```js
 point_1 = intersect(graph_1, circle_1, circle_2)
 ```
 
 ### Find where a parabola crosses a vertical line
 
-```
+```js
 P = plot(G, "x^2/6 - 0.5", -7, 7)
 ```
 
 ### Intersect plot with vertical line at x = 2
 
-```
+```js
 H5 = intersect(G, P, vline(G, 2))
 ```

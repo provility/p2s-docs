@@ -19,7 +19,7 @@ Inline modifier that sets the font size in pixels for text-rendering expressions
 
 ### Small text
 
-```
+```js
 f(16)
 ```
 
@@ -27,7 +27,7 @@ Small font size for compact text
 
 ### Medium text
 
-```
+```js
 f(24)
 ```
 
@@ -35,7 +35,7 @@ Medium font size for normal text
 
 ### Large text
 
-```
+```js
 f(36)
 ```
 
@@ -43,7 +43,7 @@ Large font size for headings
 
 ### Very large text
 
-```
+```js
 f(48)
 ```
 
@@ -51,7 +51,7 @@ Very large font size for titles
 
 ### Inside write expression
 
-```
+```js
 writewithout(at(21, 14), "(a+x^2 + 1) / (x^2 + 1)", select("x^2 + 1", 2), type(write), f(48))
 ```
 
@@ -61,12 +61,12 @@ Large font size applied to a writewithout expression
 
 ### Table with custom font size
 
-```
+```js
 table_1 = table(at(4, 26), "x", "(x-1)/(x^2-1)", range(0, 0.2, 0.5, 0.7, 0.8, 0.9, 0.99, 0.999, 1, 1.1, 1.2, 2), f(16))
 ```
 
 ### Write expression with large font
 
-```
+```js
 writewithout_1 = writewithout(at(21.4, 14.2), "(a+x^2 + 1) / (x^2 + 1)", select("x^2 + 1", 2), type(write), f(48))
 ```

@@ -22,7 +22,7 @@ Animate substituting one text element with another by moving the source content 
 
 ### Basic replace
 
-```
+```js
 textreplace(target, source)
 ```
 
@@ -30,7 +30,7 @@ Replace target with source content
 
 ### With offset and type
 
-```
+```js
 textreplace(target, source, buff(r, c), type(replace))
 ```
 
@@ -40,14 +40,14 @@ Replace with offset, explicit type
 
 ### Replace label with selected term from equation
 
-```
+```js
 select_1 = select(write_2, "a^2-x^2", 1)
 text_replace_6 = textreplace(label_3, select_1, buff(0, -2), type(replace))
 ```
 
 ### Replace variable in equation
 
-```
+```js
 M = write(at(2, 2), "x + 3 = 7", type(print))
 val = write(at(1, 1), "4", type(print))
 X = select(M, "x", 1)
@@ -56,7 +56,7 @@ textreplace(X, val)
 
 ### Substitute in formula
 
-```
+```js
 M = write(at(3, 2), "y = mx + b", type(print))
 slope = write(at(1, 1), "2", type(print))
 S = select(M, "m", 1)

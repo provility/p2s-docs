@@ -19,7 +19,7 @@ Animated visibility transition that gradually hides one or more visible shapes w
 
 ### Fade out single shape
 
-```
+```js
 fadeout(A)
 ```
 
@@ -27,7 +27,7 @@ Fade out one shape with animation
 
 ### Fade out multiple shapes
 
-```
+```js
 fadeout(A, B, C)
 ```
 
@@ -37,18 +37,18 @@ Fade out several shapes simultaneously
 
 ### Fade out a construction line
 
-```
+```js
 fadeout(L1)
 ```
 
 ### Fade out multiple shapes together
 
-```
+```js
 fadeout(point_1, line_1, label_1)
 ```
 
 ### Fade out then fade in as transition
 
-```
+```js
 seq(fadeout(step1_shapes), fadein(step2_shapes))
 ```

@@ -21,7 +21,7 @@ Pans the 2D graph viewport to center on a coordinate, point, or geometric object
 
 ### Pan to coordinates
 
-```
+```js
 pan(graph, x, y)
 ```
 
@@ -29,7 +29,7 @@ Pan to center on the given x, y coordinates
 
 ### Pan to coordinates with duration
 
-```
+```js
 pan(graph, x, y, duration)
 ```
 
@@ -37,7 +37,7 @@ Pan to coordinates with custom animation duration
 
 ### Pan to point variable
 
-```
+```js
 pan(graph, pointVar)
 ```
 
@@ -45,7 +45,7 @@ Pan to center on a previously defined point
 
 ### Pan to object center
 
-```
+```js
 pan(graph, objectVar)
 ```
 
@@ -55,14 +55,14 @@ Pan to center on a circle, polygon, or other object
 
 ### Pan to specific coordinates
 
-```
+```js
 G = g2d(at(2, 2), 20, 20, range(-10, 10), range(-10, 10))
 pan(G, 5, 5)
 ```
 
 ### Pan to a point variable
 
-```
+```js
 G = g2d(at(2, 2), 20, 20)
 P = point(G, 7, 3)
 pan(G, P)
@@ -70,13 +70,13 @@ pan(G, P)
 
 ### Pan with custom duration
 
-```
+```js
 pan(G, -3, 2, 0.5)
 ```
 
 ### Pan to center on a circle
 
-```
+```js
 C = circle(G, 3, point(G, 5, 5))
 pan(G, C)
 ```

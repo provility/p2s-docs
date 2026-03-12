@@ -23,7 +23,7 @@ Bundles 3D axis ranges with gridline visibility and coordinate system options (L
 
 ### Axes only (default)
 
-```
+```js
 axes3d(range3d(range(-10, 10), range(-10, 10), range(-5, 5)))
 ```
 
@@ -31,7 +31,7 @@ Show axes with no gridlines (default behavior)
 
 ### With gridlines
 
-```
+```js
 axes3d(range3d(range(-5, 5), range(-5, 5), range(-5, 5)), "gridlines")
 ```
 
@@ -39,7 +39,7 @@ Show axes and gridlines
 
 ### Gridlines with LHS system
 
-```
+```js
 axes3d(range3d(range(-5, 5), range(-5, 5), range(-5, 5)), "gridlines", "lhs")
 ```
 
@@ -47,7 +47,7 @@ LHS coordinate system with visible gridlines
 
 ### RHS system with gridlines
 
-```
+```js
 axes3d(range3d(range(-5, 5), range(-5, 5), range(-5, 5)), "gridlines", "rhs")
 ```
 
@@ -55,7 +55,7 @@ RHS coordinate system with visible gridlines
 
 ### No grid at all
 
-```
+```js
 axes3d(range3d(range(-5, 5), range(-5, 5), range(-5, 5)), "nogrid")
 ```
 
@@ -63,7 +63,7 @@ Hide all axes and gridlines
 
 ### Styled gridlines
 
-```
+```js
 axes3d(range3d(range(-5, 5), range(-5, 5), range(-5, 5)), grid3d(c(gray)), "gridlines")
 ```
 
@@ -73,24 +73,24 @@ Gridlines with custom color styling
 
 ### 3D graph with LHS gridlines
 
-```
+```js
 G = g3d(at(0, 0), 30, 30, axes3d(range3d(range(-5, 5), range(-5, 5), range(-5, 5)), "gridlines", "lhs"))
 ```
 
 ### 3D graph with RHS gridlines
 
-```
+```js
 G = g3d(at(0, 0), 30, 30, axes3d(range3d(range(-5, 5), range(-5, 5), range(-5, 5)), "gridlines", "rhs"))
 ```
 
 ### 3D graph with gray styled gridlines
 
-```
+```js
 G = g3d(at(5, 5), 20, 20, axes3d(range3d(range(-10, 10), range(-10, 10), range(-5, 5)), grid3d(c(gray)), "gridlines"))
 ```
 
 ### 3D graph with axes only, no gridlines
 
-```
+```js
 G = g3d(at(0, 0), 25, 25, axes3d(range3d(range(-10, 10), range(-10, 10), range(-10, 10))))
 ```

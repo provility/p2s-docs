@@ -22,7 +22,7 @@ Draws a curly brace above a selected text region to group or annotate mathematic
 
 ### Basic overbrace
 
-```
+```js
 overbrace(D)
 ```
 
@@ -30,7 +30,7 @@ Draw a curly brace above TextItem D with default buffer
 
 ### With buffer
 
-```
+```js
 overbrace(D, 10)
 ```
 
@@ -38,7 +38,7 @@ Draw a curly brace with custom vertical buffer
 
 ### With color
 
-```
+```js
 overbrace(D, c(blue))
 ```
 
@@ -46,7 +46,7 @@ Draw a blue curly brace above the text
 
 ### With buffer and styling
 
-```
+```js
 overbrace(D, 10, c(red), s(3))
 ```
 
@@ -56,21 +56,21 @@ Custom buffer with red color and thick stroke
 
 ### Overbrace the discriminant in a formula
 
-```
+```js
 D = select(Q, "b^2 - 4ac", 1)
 overbrace_1 = overbrace(D)
 ```
 
 ### Blue overbrace with custom buffer
 
-```
+```js
 select_1 = select(write_1, "a cos(theta)", 1)
 overbrace_1 = overbrace(select_1, 10, c(blue))
 ```
 
 ### Styled overbrace over a group of terms
 
-```
+```js
 D = select(Q, "2a", 1)
 overbrace_1 = overbrace(D, c(red), s(3))
 ```

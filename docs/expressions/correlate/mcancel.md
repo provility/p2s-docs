@@ -22,7 +22,7 @@ Draws a diagonal strikethrough line across a selected text region to indicate al
 
 ### Default cancel (down diagonal)
 
-```
+```js
 mcancel(D)
 ```
 
@@ -30,7 +30,7 @@ Cancel with a down diagonal line
 
 ### Up diagonal cancel
 
-```
+```js
 mcancel(D, "u")
 ```
 
@@ -38,7 +38,7 @@ Cancel with an up diagonal line (bottom-left to top-right)
 
 ### X pattern cancel
 
-```
+```js
 mcancel(D, "x")
 ```
 
@@ -46,7 +46,7 @@ Cancel with an X pattern (both diagonals)
 
 ### Styled cancel
 
-```
+```js
 mcancel(D, "u", c(red), s(3))
 ```
 
@@ -54,7 +54,7 @@ Up diagonal cancel with red color and thick stroke
 
 ### Colored cancel
 
-```
+```js
 mcancel(D, c(blue))
 ```
 
@@ -64,21 +64,21 @@ Default diagonal cancel with blue color
 
 ### Cancel the discriminant in a quadratic formula
 
-```
+```js
 D = select(Q, "b^2 - 4ac", 1)
 mcancel_1 = mcancel(D)
 ```
 
 ### Cancel with up diagonal and red color
 
-```
+```js
 D = select(Q, "b^2 - 4ac", 1)
 mcancel_1 = mcancel(D, "u", c(red))
 ```
 
 ### Cancel with X pattern and styling
 
-```
+```js
 select_1 = select(write_1, "sin^2(x)", 1)
 mcancel_1 = mcancel(select_1, "x", c(blue), s(3))
 ```

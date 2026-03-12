@@ -22,7 +22,7 @@ Computes the intersection point between two geometric objects such as lines, cir
 
 ### Two lines
 
-```
+```js
 intersect(G, line1, line2)
 ```
 
@@ -30,7 +30,7 @@ Find where two lines cross
 
 ### Line and polygon
 
-```
+```js
 intersect(G, line, polygon, 1)
 ```
 
@@ -38,7 +38,7 @@ First intersection of line with polygon edge
 
 ### Circle and line
 
-```
+```js
 intersect(G, circle, line, 2)
 ```
 
@@ -46,7 +46,7 @@ Second intersection of circle with line
 
 ### Two circles
 
-```
+```js
 intersect(G, circle1, circle2, 1)
 ```
 
@@ -56,36 +56,36 @@ First intersection of two circles
 
 ### Find where altitude meets base (perpendicular foot)
 
-```
+```js
 foot = intersect(graph_1, line_base, line_altitude)
 ```
 
 ### Draw the intersection point
 
-```
+```js
 point_int = point(graph_1, foot, c(red))
 ```
 
 ### Intersection of two triangle edges extended
 
-```
+```js
 crossing = intersect(graph_1, line_a, line_b)
 ```
 
 ### Line intersecting polygon (first intersection)
 
-```
+```js
 int_1 = intersect(graph_1, diagonal_line, triangle_1, 1)
 ```
 
 ### Line intersecting polygon (second intersection)
 
-```
+```js
 int_2 = intersect(graph_1, diagonal_line, triangle_1, 2)
 ```
 
 ### Circle and line intersection
 
-```
+```js
 tangent_point = intersect(graph_1, circle_1, line_1, 1)
 ```

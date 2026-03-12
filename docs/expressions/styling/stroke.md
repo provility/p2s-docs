@@ -19,7 +19,7 @@ Inline modifier that sets the stroke (outline) thickness in pixels. Accepts a po
 
 ### Thin stroke
 
-```
+```js
 s(0.1)
 ```
 
@@ -27,7 +27,7 @@ Very thin stroke, nearly invisible outline
 
 ### Default stroke
 
-```
+```js
 s(1)
 ```
 
@@ -35,7 +35,7 @@ Standard stroke width
 
 ### Medium stroke
 
-```
+```js
 s(2)
 ```
 
@@ -43,7 +43,7 @@ Medium thickness stroke
 
 ### Thick stroke
 
-```
+```js
 s(5)
 ```
 
@@ -51,7 +51,7 @@ Thick visible stroke
 
 ### Inside shape with other modifiers
 
-```
+```js
 rect(G, 12, 4, 4, 3, fi("tree", 0.7), fo(1), s(0.1))
 ```
 
@@ -61,18 +61,18 @@ Combine stroke width with fill image and fill opacity
 
 ### Rectangle with thin stroke and fill image
 
-```
+```js
 r1 = rect(G, 12, 4, 4, 3, fi("tree", 0.7), fo(1), s(0.1))
 ```
 
 ### Arrow with thick stroke
 
-```
+```js
 arrow(at(T, 1, 1), at(P1), -2, c(red), s(5))
 ```
 
 ### Effects panel stroke width change
 
-```
+```js
 effect_1 = stroke(A, B, s(3))
 ```

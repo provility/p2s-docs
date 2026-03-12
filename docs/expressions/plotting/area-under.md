@@ -24,7 +24,7 @@ Shades the region between a curve and the x-axis over a specified x-interval, re
 
 ### Basic area under curve
 
-```
+```js
 f = plot(G, "f(x)")
 areaunder(G, f, xmin, xmax)
 ```
@@ -33,7 +33,7 @@ Shade area under f(x) between xmin and xmax with default blue fill
 
 ### With custom color
 
-```
+```js
 f = plot(G, "f(x)")
 areaunder(G, f, xmin, xmax, "red")
 ```
@@ -42,7 +42,7 @@ Shade with a custom fill color
 
 ### With custom color and opacity
 
-```
+```js
 f = plot(G, "f(x)")
 areaunder(G, f, xmin, xmax, "green", 0.5)
 ```
@@ -53,7 +53,7 @@ Shade with custom color and opacity
 
 ### Area under x^2 from 0 to 2
 
-```
+```js
 G = g2d(at(2, 2), 30, 30)
 f = plot(G, "x^2")
 areaunder(G, f, 0, 2)
@@ -61,7 +61,7 @@ areaunder(G, f, 0, 2)
 
 ### Area under sine curve from 0 to pi in red
 
-```
+```js
 G = g2d(at(2, 2), 30, 30)
 f = plot(G, "sin(x)")
 areaunder(G, f, 0, 3.14, "red", 0.4)
@@ -69,7 +69,7 @@ areaunder(G, f, 0, 3.14, "red", 0.4)
 
 ### Visualize signed area (negative region)
 
-```
+```js
 G = g2d(at(2, 2), 30, 30)
 f = plot(G, "x^3 - x")
 areaunder(G, f, -1, 1)

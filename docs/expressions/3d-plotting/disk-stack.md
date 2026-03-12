@@ -23,7 +23,7 @@ Approximates a solid of revolution using the disk method by stacking circular cr
 
 ### Disk stack along x-axis
 
-```
+```js
 diskstack(G, R, "x", 10)
 ```
 
@@ -31,7 +31,7 @@ diskstack(G, R, "x", 10)
 
 ### Disk stack along y-axis
 
-```
+```js
 diskstack(G, R, "y", 20)
 ```
 
@@ -39,7 +39,7 @@ diskstack(G, R, "y", 20)
 
 ### Disk stack with color
 
-```
+```js
 diskstack(G, R, "x", 10, c("green"))
 ```
 
@@ -49,7 +49,7 @@ Colored disk stack
 
 ### Disk method around x-axis with linear boundary
 
-```
+```js
 G = g3d(at(5, 5), 20, 20)
 c1 = plot3d(G, "t", "0.5*t", "0", range(0, 4), c("green"))
 c2 = plot3d(G, "4", "t", "0", range(0, 2), c("green"))
@@ -59,7 +59,7 @@ d1 = diskstack(G, R, "x", 20, c("green"))
 
 ### Disk method around y-axis with parabolic curve
 
-```
+```js
 G = g3d(at(5, 5), 20, 20)
 c1 = plot3d(G, "t^2+1", "t", "0", range(-1, 1), c("magenta"))
 c2 = plot3d(G, "0", "t", "0", range(-1, 1), c("green"))

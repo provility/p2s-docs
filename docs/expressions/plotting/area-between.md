@@ -23,7 +23,7 @@ Shades the enclosed region between two plotted curves, automatically computing i
 
 ### Basic area between two curves
 
-```
+```js
 f = plot(G, "f(x)")
 g = plot(G, "g(x)")
 areabetween(G, f, g)
@@ -33,7 +33,7 @@ Shade the region between f and g with default styling
 
 ### With custom color and opacity
 
-```
+```js
 f = plot(G, "f(x)")
 g = plot(G, "g(x)")
 areabetween(G, f, g, "purple", 0.5)
@@ -45,7 +45,7 @@ Shade with custom color and opacity
 
 ### Area between x^2 and x
 
-```
+```js
 G = g2d(at(2, 2), 30, 30)
 f = plot(G, "x^2")
 g = plot(G, "x")
@@ -54,7 +54,7 @@ areabetween(G, f, g)
 
 ### Area between sine and cosine
 
-```
+```js
 G = g2d(at(2, 2), 30, 30)
 f = plot(G, "sin(x)")
 g = plot(G, "cos(x)")
@@ -63,7 +63,7 @@ areabetween(G, f, g, "purple", 0.4)
 
 ### Area between a parabola and a line
 
-```
+```js
 G = g2d(at(2, 2), 30, 30)
 f = plot(G, "x^2")
 g = plot(G, "2*x + 3")

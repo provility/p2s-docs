@@ -22,7 +22,7 @@ Zooms the 2D graph viewport in, out, or to fit specific shapes, with animated tr
 
 ### Zoom in to coordinates
 
-```
+```js
 zoomin(graph, x, y)
 ```
 
@@ -30,7 +30,7 @@ Zoom into a specific point with default scale
 
 ### Zoom in with scale
 
-```
+```js
 zoomin(graph, x, y, scale)
 ```
 
@@ -38,7 +38,7 @@ Zoom into a point with custom scale factor
 
 ### Zoom in with scale and duration
 
-```
+```js
 zoomin(graph, x, y, scale, duration)
 ```
 
@@ -46,7 +46,7 @@ Zoom into a point with custom scale and animation duration
 
 ### Zoom in to point variable
 
-```
+```js
 zoomin(graph, pointVar)
 ```
 
@@ -54,7 +54,7 @@ Zoom into a previously defined point
 
 ### Zoom in to object
 
-```
+```js
 zoomin(graph, objectVar)
 ```
 
@@ -62,7 +62,7 @@ Zoom into the center of a circle, polygon, or other object
 
 ### Zoom in to bounding box
 
-```
+```js
 zoomin(graph, x1, y1, x2, y2)
 ```
 
@@ -70,7 +70,7 @@ Zoom to fit a rectangular region defined by two corners
 
 ### Zoom out (reset)
 
-```
+```js
 zoomout(graph)
 ```
 
@@ -78,7 +78,7 @@ Reset zoom to original view with default 1s duration
 
 ### Zoom out with duration
 
-```
+```js
 zoomout(graph, duration)
 ```
 
@@ -86,7 +86,7 @@ Reset zoom with custom animation duration
 
 ### Zoom fit single shape
 
-```
+```js
 zoomfit(graph, shape)
 ```
 
@@ -94,7 +94,7 @@ Zoom to fit a single shape with padding
 
 ### Zoom fit multiple shapes
 
-```
+```js
 zoomfit(graph, shape1, shape2, ...)
 ```
 
@@ -102,7 +102,7 @@ Zoom to fit all given shapes
 
 ### Zoom fit with duration
 
-```
+```js
 zoomfit(graph, shape1, shape2, duration)
 ```
 
@@ -112,7 +112,7 @@ Zoom to fit shapes with custom animation duration
 
 ### Zoom in to a polygon region
 
-```
+```js
 G = g2d(at(2, 2), 20, 30, range(-1, 10))
 P = polygon(G, point(G, 0, 0), point(G, 4, 0), point(G, 0, 3))
 zoomin(G, P)
@@ -120,31 +120,31 @@ zoomin(G, P)
 
 ### Zoom in to specific coordinates
 
-```
+```js
 zoomin(G, 3, 4)
 ```
 
 ### Zoom in to a bounding box
 
-```
+```js
 zoomin(G, 0, 0, 5, 5)
 ```
 
 ### Zoom out to reset view
 
-```
+```js
 zoomout(G)
 ```
 
 ### Zoom out with fast animation
 
-```
+```js
 zoomout(G, 0.5)
 ```
 
 ### Zoom to fit two points
 
-```
+```js
 A = point(G, 1, 1)
 B = point(G, 8, 6)
 zoomfit(G, A, B)
@@ -152,7 +152,7 @@ zoomfit(G, A, B)
 
 ### Zoom to fit a circle
 
-```
+```js
 C = circle(G, 3, point(G, 5, 5))
 zoomfit(G, C)
 ```

@@ -22,7 +22,7 @@ Subtracts one vector from another (A minus B) to produce a difference vector, op
 
 ### Basic difference at origin
 
-```
+```js
 vecdiff(G, vecA, vecB)
 ```
 
@@ -30,7 +30,7 @@ Subtract vectors (A - B), result starts at origin
 
 ### Difference placed at a point
 
-```
+```js
 vecdiff(G, vecA, vecB, point)
 ```
 
@@ -40,36 +40,36 @@ Subtract vectors, result starts at the given point
 
 ### Create graph and two vectors
 
-```
+```js
 G = g2d(at(8, 0), 20, 20)
 ```
 
 ### First vector
 
-```
+```js
 V1 = vector(G, 0, 0, 5, 3)
 ```
 
 ### Second vector
 
-```
+```js
 V2 = vector(G, 0, 0, 2, 1)
 ```
 
 ### Difference V1 - V2 at origin
 
-```
+```js
 diff_1 = vecdiff(G, V1, V2)
 ```
 
 ### Difference placed at a point
 
-```
+```js
 diff_2 = vecdiff(G, V1, V2, point(G, -3, 0))
 ```
 
 ### Styled difference vector in orange
 
-```
+```js
 diff_3 = vecdiff(G, V1, V2, c(orange))
 ```

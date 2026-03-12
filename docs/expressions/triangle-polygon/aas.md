@@ -24,7 +24,7 @@ Constructs a triangle from two angles and a non-included side (Angle-Angle-Side)
 
 ### Basic AAS triangle
 
-```
+```js
 aas(G, angleA, angleB, sideA)
 ```
 
@@ -32,7 +32,7 @@ Triangle at origin with two angles and opposite side
 
 ### Positioned triangle
 
-```
+```js
 aas(G, 30, 60, 5, point(G, 0, 0))
 ```
 
@@ -40,7 +40,7 @@ Triangle positioned at specific point
 
 ### 30-60-90 triangle
 
-```
+```js
 aas(G, 30, 60, 5)
 ```
 
@@ -50,30 +50,30 @@ Special right triangle with known angles
 
 ### AAS triangle with two given angles and opposite side
 
-```
+```js
 triangle_1 = aas(graph_1, 30, 60, 5, point(graph_1, 0, 0))
 ```
 
 ### Extract all three angles for comparison
 
-```
+```js
 angle_A = angle(graph_1, item(triangle_1, type(angle), 1), 0.8)
 ```
 
 ### Label the given angle A
 
-```
+```js
 label_A = label(graph_1, at(angle_A), "30", buff(-0.5, 0.5))
 ```
 
 ### Extract and measure the given side a
 
-```
+```js
 line_a = line(graph_1, item(triangle_1, type(edge), 2), type(segment), c(blue))
 ```
 
 ### Special 30-60-90 triangle
 
-```
+```js
 triangle_special = aas(graph_1, 30, 60, 4, point(graph_1, 3, 3))
 ```

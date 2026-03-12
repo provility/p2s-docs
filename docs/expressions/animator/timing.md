@@ -21,7 +21,7 @@ Smoothly animates a numeric variable from its current value to a target value ov
 
 ### Instant change
 
-```
+```js
 change(variable, targetValue)
 ```
 
@@ -29,7 +29,7 @@ Animate variable to target with default duration
 
 ### Timed change
 
-```
+```js
 change(variable, targetValue, t(seconds))
 ```
 
@@ -37,7 +37,7 @@ Animate variable to target over specified duration
 
 ### Change ratio to animate point on curve
 
-```
+```js
 change(r, 0.8)
 ```
 
@@ -47,7 +47,7 @@ Animate a ratio variable to slide a point along a line or curve
 
 ### Animate secant line approaching tangent (limit demonstration)
 
-```
+```js
 eq = def(x, "x^2")
 G = g2d(at(2, 3), 30, 30, range(-2, 3), range(-1, 5))
 pl1 = plot(G, eq)
@@ -62,7 +62,7 @@ change(q_1, 0.8, t(5))
 
 ### Animate point sliding along a line segment
 
-```
+```js
 G = g2d(at(2, 3), 30, 30)
 L = line(G, -5, 0, 5, 7)
 r = 0
@@ -72,7 +72,7 @@ change(r, 0, 0.8)
 
 ### Animate polar angle sweep
 
-```
+```js
 G = p2d(at(2, 4), 20, 20, range(0, 10, 1), grid())
 ang = 30
 change(ang, 210)
@@ -80,7 +80,7 @@ change(ang, 210)
 
 ### Animate 3D point coordinate
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 x0 = 2
 point(G, x0, 1, 3)
@@ -89,7 +89,7 @@ change(x0, 1, -2)
 
 ### Animate limit approach from one side
 
-```
+```js
 G = g2d(at(1, 25), 14, 15, range(-2, 3, 1), range(-1, 5, 1))
 q1x = 2
 change(q1x, 0.8)

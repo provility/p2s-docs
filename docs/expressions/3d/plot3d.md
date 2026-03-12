@@ -21,7 +21,7 @@ Plots surfaces and curves in 3D space, supporting explicit surfaces z=f(x,y), pa
 
 ### Explicit surface z = f(x, y)
 
-```
+```js
 plot3d(G, "equation", range(xMin, xMax), range(yMin, yMax))
 ```
 
@@ -29,7 +29,7 @@ Surface defined by z as a function of x and y
 
 ### Parametric curve
 
-```
+```js
 plot3d(G, "x(t)", "y(t)", "z(t)", range(tMin, tMax))
 ```
 
@@ -37,7 +37,7 @@ Space curve defined by three parametric equations in t
 
 ### Parametric surface
 
-```
+```js
 plot3d(G, "x(u,v)", "y(u,v)", "z(u,v)", range(uMin, uMax), range(vMin, vMax))
 ```
 
@@ -45,7 +45,7 @@ Surface defined by three parametric equations in u and v
 
 ### Implicit surface
 
-```
+```js
 plot3d(G, "f(x,y,z)")
 ```
 
@@ -53,7 +53,7 @@ Surface defined implicitly where f(x, y, z) = 0
 
 ### Using a definition variable
 
-```
+```js
 plot3d(G, f, range(xMin, xMax), range(yMin, yMax))
 ```
 
@@ -61,7 +61,7 @@ Surface using a def() function reference instead of a string
 
 ### With color styling
 
-```
+```js
 plot3d(G, "x^2 + y^2", range(-3, 3), range(-3, 3), c(blue))
 ```
 
@@ -71,14 +71,14 @@ Surface with a custom color
 
 ### Paraboloid surface (tangent-plane lesson)
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 S = plot3d(G, "x^2 + y^2", range(-3, 3), range(-3, 3))
 ```
 
 ### Explicit surface using def() (point-3d-change lesson)
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 f = def(x, y, "x^2 + y^2")
 P = plot3d(G, f, range(-3, 3), range(-3, 3))
@@ -86,21 +86,21 @@ P = plot3d(G, f, range(-3, 3), range(-3, 3))
 
 ### Parametric curve for solid of revolution (solid-of-rev lesson)
 
-```
+```js
 G = g3d(at(5, 5), 20, 20)
 c1 = plot3d(G, "t", "0.5*t", "0", range(0, 4), c("green"))
 ```
 
 ### Parametric surface (sphere parameterization)
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 sph = plot3d(G, "cos(u)*sin(v)", "sin(u)*sin(v)", "cos(v)", range(0, 2*pi), range(0, pi))
 ```
 
 ### Implicit surface (unit sphere)
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 surface = plot3d(G, "x^2 + y^2 + z^2 - 1")
 ```

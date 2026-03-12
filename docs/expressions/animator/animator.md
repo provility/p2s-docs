@@ -22,7 +22,7 @@ Creates a clickable button on the canvas that animates a numeric variable to a t
 
 ### Basic animator
 
-```
+```js
 animator(at(row, col), variable, target)
 ```
 
@@ -30,7 +30,7 @@ Button that animates variable to target with default label
 
 ### Animator with custom label
 
-```
+```js
 animator(at(row, col), variable, target, "Go")
 ```
 
@@ -40,7 +40,7 @@ Button with custom label text
 
 ### Animate a translation parameter interactively
 
-```
+```js
 G = g2d(at(2, 20), 20, 20)
 a = 4
 I = image(G, "balloon", point(G, -5, 0), 0.1)
@@ -50,7 +50,7 @@ animator(at(10, 10), a, 2)
 
 ### Interactive coefficient explorer
 
-```
+```js
 G = g2d(at(2, 3), 30, 30)
 a = 1
 plot(G, "a*x^2")

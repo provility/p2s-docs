@@ -21,7 +21,7 @@ Creates a sphere in 3D space centered at a given point with a specified radius.
 
 ### Sphere at a point variable
 
-```
+```js
 sphere(G, radius, point)
 ```
 
@@ -29,7 +29,7 @@ Sphere centered at an existing point3d with given radius
 
 ### Sphere with inline center
 
-```
+```js
 sphere(G, radius, point3d(G, x, y, z))
 ```
 
@@ -37,7 +37,7 @@ Sphere with inline center point definition
 
 ### Sphere from click (center + radius prompt)
 
-```
+```js
 sphere(G, center, radius)
 ```
 
@@ -45,7 +45,7 @@ Sphere created from a clicked point with a prompted radius
 
 ### With color
 
-```
+```js
 sphere(G, radius, point, c(blue))
 ```
 
@@ -55,7 +55,7 @@ Sphere with a custom color
 
 ### Sphere at a point with radius 2
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 P = point3d(G, 0, 0, 0)
 sph = sphere(G, 2, P)
@@ -63,14 +63,14 @@ sph = sphere(G, 2, P)
 
 ### Sphere with inline center
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 sph = sphere(G, 3, point3d(G, 1, 2, 0))
 ```
 
 ### Two concentric spheres with different colors
 
-```
+```js
 G = g3d(at(0, 0), 30, 30)
 P = point3d(G, 0, 0, 0)
 s1 = sphere(G, 2, P, c("blue"))

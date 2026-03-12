@@ -110,7 +110,7 @@ def render_expression_markdown(data):
         for alt in alts:
             lines.append(f"### {escape_mdx(alt.get('variant', ''))}")
             lines.append('')
-            lines.append('```')
+            lines.append('```js')
             lines.append(alt.get('syntax', ''))
             lines.append('```')
             lines.append('')
@@ -128,7 +128,7 @@ def render_expression_markdown(data):
             if scenario:
                 lines.append(f'### {escape_mdx(scenario)}')
                 lines.append('')
-            lines.append('```')
+            lines.append('```js')
             lines.append(expression)
             lines.append('```')
             lines.append('')

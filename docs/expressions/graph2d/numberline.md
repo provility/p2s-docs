@@ -23,7 +23,7 @@ Creates a 1D number line with configurable range and tick marks for visualizing 
 
 ### Basic number line
 
-```
+```js
 nl(at(row, col), height, width, range(min, max))
 ```
 
@@ -31,7 +31,7 @@ Number line with specified range, no tick marks
 
 ### Number line with ticks
 
-```
+```js
 nl(at(row, col), height, width, range(min, max), grid())
 ```
 
@@ -39,7 +39,7 @@ Number line with tick marks shown
 
 ### Number line with custom step
 
-```
+```js
 nl(at(row, col), height, width, range(min, max, step), grid())
 ```
 
@@ -47,7 +47,7 @@ Number line with custom tick spacing
 
 ### Number line with border
 
-```
+```js
 nl(at(row, col), height, width, range(min, max), grid(), br(0.5))
 ```
 
@@ -57,13 +57,13 @@ Number line with border shadow
 
 ### Basic number line from 0 to 10 with tick marks
 
-```
+```js
 nl_1 = nl(at(3.1, 9.4), 6, 19.4, range(0, 10), grid())
 ```
 
 ### Number line with an interval marked
 
-```
+```js
 nl_1 = nl(at(3.1, 9.4), 6, 19.4, range(0, 10), grid())
 interval_1 = interval(nl_1, 2, 6, type(closed), buff(-19))
 ```

@@ -25,7 +25,7 @@ Creates a line on a 2D graph as an infinite line, finite segment, or ray between
 
 ### Infinite line through two points
 
-```
+```js
 line(G, P1, P2)
 ```
 
@@ -33,7 +33,7 @@ Line extending infinitely through both points
 
 ### Line segment between two points
 
-```
+```js
 line(G, P1, P2, type(segment))
 ```
 
@@ -41,7 +41,7 @@ Finite segment from P1 to P2
 
 ### Ray from first through second point
 
-```
+```js
 line(G, P1, P2, type(ray))
 ```
 
@@ -49,7 +49,7 @@ Half-line starting at P1, passing through P2
 
 ### Line from raw coordinates
 
-```
+```js
 line(G, x1, y1, x2, y2)
 ```
 
@@ -57,7 +57,7 @@ Line from (x1,y1) to (x2,y2) using coordinate values
 
 ### Polar line
 
-```
+```js
 line(G, length, angle, type(polar))
 ```
 
@@ -65,7 +65,7 @@ Line through origin at given angle with given length
 
 ### Colored line
 
-```
+```js
 line(G, P1, P2, c(red))
 ```
 
@@ -73,7 +73,7 @@ Line rendered in specified color
 
 ### Dashed line
 
-```
+```js
 line(G, P1, P2, type(segment), dash())
 ```
 
@@ -81,7 +81,7 @@ Dashed line segment between points
 
 ### Line from edge data
 
-```
+```js
 line(G, item(polygon, type(edge), index), type(segment))
 ```
 
@@ -89,7 +89,7 @@ Line segment created from polygon edge extraction
 
 ### Vertical line through point
 
-```
+```js
 vline(G, point)
 ```
 
@@ -97,7 +97,7 @@ Vertical line passing through a point (or vline(G, x) for x-coordinate)
 
 ### Horizontal line through point
 
-```
+```js
 hline(G, point)
 ```
 
@@ -105,7 +105,7 @@ Horizontal line passing through a point (or hline(G, y) for y-coordinate)
 
 ### Perpendicular line
 
-```
+```js
 perp(G, line, point)
 ```
 
@@ -113,7 +113,7 @@ Line perpendicular to existing line through given point
 
 ### Parallel line
 
-```
+```js
 pll(G, line, point)
 ```
 
@@ -121,7 +121,7 @@ Line parallel to existing line through given point
 
 ### Reflected line
 
-```
+```js
 reflect(G, mirror_line, line)
 ```
 
@@ -129,7 +129,7 @@ Line reflected across another line
 
 ### Rotated line
 
-```
+```js
 rotate(G, line, angle)
 ```
 
@@ -137,7 +137,7 @@ Line rotated by angle degrees (optional center point)
 
 ### Translated line
 
-```
+```js
 translate(G, line, dx, dy)
 ```
 
@@ -145,7 +145,7 @@ Line shifted by (dx, dy) offset
 
 ### Tangent line to curve
 
-```
+```js
 tangent(G, plot, x)
 ```
 
@@ -153,7 +153,7 @@ Tangent line to a curve at x-coordinate
 
 ### Line property: start point
 
-```
+```js
 point(G, property(line, type(start)))
 ```
 
@@ -161,7 +161,7 @@ Extract start point of a line
 
 ### Line property: end point
 
-```
+```js
 point(G, property(line, type(end)))
 ```
 
@@ -169,7 +169,7 @@ Extract end point of a line
 
 ### Line property: midpoint
 
-```
+```js
 point(G, property(line, type(center)))
 ```
 
@@ -177,7 +177,7 @@ Extract midpoint of a line
 
 ### Line property: slope
 
-```
+```js
 property(line, type(slope))
 ```
 
@@ -185,7 +185,7 @@ Get numeric slope value
 
 ### Line property: angle
 
-```
+```js
 property(line, type(angle))
 ```
 
@@ -193,7 +193,7 @@ Get angle of line in degrees
 
 ### Line property: distance/length
 
-```
+```js
 measure(G, line)
 ```
 
@@ -201,7 +201,7 @@ Get length/distance measurement of line segment
 
 ### Point on line at ratio
 
-```
+```js
 point(G, line, t, type(ratio))
 ```
 
@@ -211,54 +211,54 @@ Point at parametric position t (0=start, 0.5=mid, 1=end)
 
 ### Infinite line through two point variables
 
-```
+```js
 L = line(G, A, B)
 ```
 
 ### Line between inline points for linear programming
 
-```
+```js
 L1 = line(G, point(G, 0, 0), point(G, 5, 0))
 ```
 
 ### Constraint line through two inline points
 
-```
+```js
 L3 = line(G, point(G, 0, 3), point(G, 4, 0))
 ```
 
 ### Line from raw coordinates
 
-```
+```js
 L = line(G, -5, 0, 5, 7)
 ```
 
 ### Red secant line between two points in tangent-limit lesson
 
-```
+```js
 line(G, p, q, c(red))
 ```
 
 ### Line between inline points with color
 
-```
+```js
 line_2 = line(G, point(G, 2.6, 2.7), point(G, -3.4, 3.2))
 ```
 
 ### Ray from intersection in parabola simulation
 
-```
+```js
 line(G, -2, y_start, x(H1), y(H1))
 ```
 
 ### Reflected ray to focus point
 
-```
+```js
 line(G, H1, F)
 ```
 
 ### Colored segment from polygon edge
 
-```
+```js
 line_a = line(graph_1, item(triangle_1, type(edge), 1), type(segment), c(blue))
 ```

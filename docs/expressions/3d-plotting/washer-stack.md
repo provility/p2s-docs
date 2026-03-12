@@ -26,7 +26,7 @@ Approximates a solid of revolution using the washer method by stacking annular c
 
 ### Washers along x-axis
 
-```
+```js
 washerstack(S, "sqrt(x)", "x^2", "x", 0, 1, 10)
 ```
 
@@ -34,7 +34,7 @@ Washers between sqrt(x) and x^2 rotated around x-axis
 
 ### Washers along y-axis
 
-```
+```js
 washerstack(S, "R(y)", "r(y)", "y", 0, 2, 8)
 ```
 
@@ -42,7 +42,7 @@ Washers between two functions of y rotated around y-axis
 
 ### Washers with color
 
-```
+```js
 washerstack(S, "sqrt(x)", "x^2", "x", 0, 1, 10, c("orange"))
 ```
 
@@ -52,7 +52,7 @@ Colored washers
 
 ### Washer method between sqrt(x) and x^2
 
-```
+```js
 S = g3d(at(5, 5), 20, 20)
 c1 = plot3d(S, "t", "sqrt(t)", "0", range(0, 1), c("magenta"))
 c2 = plot3d(S, "t", "t^2", "0", range(0, 1), c("green"))
