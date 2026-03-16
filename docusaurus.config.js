@@ -11,8 +11,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://provility.github.io',
-  baseUrl: '/p2s-docs/',
+  url: 'https://docs.point2space.com',
+  baseUrl: '/',
 
   organizationName: 'provility',
   projectName: 'p2s-docs',
