@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocs_website=globalThis.webpackChunkdocs_website||[]).push([[2634],{192(e,s,t){t.r(s),t.d(s,{default:()=>r});t(6540);var o=t(6347),i=t(4848);function r(){return(0,i.jsx)(o.rd,{to:"/expressions/geometry/point"})}}}]);
